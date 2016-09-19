@@ -1,0 +1,84 @@
+#!/usr/bin/env python
+
+import os
+import sys
+import re
+import json
+import ast
+import subprocess
+import bisect
+import time
+import glob
+
+class composeNodeList(object):
+    """ Example class that compose node list from remote machine"""
+    def __init__(self,mname):
+        print "machine name: ",mname
+        self.machineName=mname
+        self.serverList=[]
+        self.nodeList={}
+        self.nodeList[self.machineName]={}
+        self.nodeListFileName='NodeList-'+mname+'.txt'
+        f = open(self.nodeListFileName, 'w')
+        f.close()
+        self.scriptName='expect_node_list'
+
+    def setServerList(self):
+        self.serverList=['ysadmin1','ysadmin2'] 
+        #self.serverList=['ysadmin1','ysadmin2','ysadmin3','ysadmin4','ysadmin5','ysadmin6'] 
+        print self.serverList
+
+    def buildExpectScript(self):
+        f = open(self.scriptName, 'w')
+        message="""#!/usr/bin/expect
+set timeout 1
+set ip [lindex $argv 0]
+spawn telnet $ip 13900
+expect "'^]'."
+send -- "cd yellowstone\\r"
+expect "$"
+send -- "ls\\r"
+expect eof
+"""
+        f.write(message)
+        f.close()        
+
+    def findYSNode(self,sname):
+        scommand="expect "+self.scriptName+" "+sname+" 13900"
+        print scommand
+        sout=runSysCommand(scommand)
+        self.nodeList[self.machineName][sname]=[] 
+        for itxt in sout:
+            if len(itxt)==10 and ("d ys" in itxt):
+                self.nodeList[self.machineName][sname].append("ys"+itxt[4:8])
+            else:
+                pass
+
+    def writeout(self):
+        f = open(self.nodeListFileName, 'a+')
+        f.write(str(self.nodeList))
+        f.close()
+
+def runSysCommand(scommand):
+    tmpscreenout=subprocess.Popen(scommand,
+                 shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+                 stderr=subprocess.STDOUT, close_fds=True)
+    #tmp_array=tmpscreenout
+    tmp_array=tmpscreenout.stdout.readlines()
+    return tmp_array 
+
+if __name__ == "__main__":
+    if(len(sys.argv) < 2):
+        print("usage %s machine name" % (sys.argv[0]))
+        sys.exit(1)
+
+    machineName=sys.argv[1]
+    p = composeNodeList(machineName)
+    p.setServerList()
+    p.buildExpectScript()
+    for serverName in p.serverList:
+        try:
+            p.findYSNode(serverName)
+        except:
+            print ("Can not find node list at server: %s" % (serverName))
+    p.writeout()
