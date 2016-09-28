@@ -13,18 +13,19 @@ import glob
 class extractRrd(object):
     """Example class that extract rrd record into local human readable files"""
     def __init__(self,fname,Date):
-        print "RTfname,queryDate",fname,Date
-        self.nodeListFile="NodeList-"+fname+"all.txt"
-        #self.nodeListFile="NodeList-"+fname+"1.txt"
+        print "extractRrd object to be initialized by: RTfname,queryDate",fname,Date
+        self.nodeListFile=fname+"-NodeList-all.txt"
+        #self.nodeListFile=fname+"-NodeList-1.txt"
+        self.RRDsListFile=fname+"-RRDsList.txt"
         self.nodeDict={}
         self.metricList=[]
         self.machine=fname
         self.queryDate=Date
         self.rrdDate=Date[6:]+'.'+Date[4:6]+'.'+Date[0:4]
-        #self.scriptName="expect_fetch_rrd_metric"
-        self.scriptName="expect_fetch_all_rrd_metrics"
+        #self.scriptName="expectScript-fetch_rrd_metric"
+        self.scriptName="expectScript-fetch_all_rrd_metrics"
         #self.homePath="/glade/u/home/shiquan/Desktop/testExpect/"
-        self.homePath="/glade/p/work/shiquan/testYSWorkSpace/"
+        #self.homePath="/glade/p/work/shiquan/testYSWorkSpace/"
         self.fetchMethod="fetch_all_metrics"
         self.dailyEntryNumber=288
 
@@ -39,15 +40,16 @@ class extractRrd(object):
         #self.nodeDict={} 
         #self.nodeDict['ysadmin2']=['ys1705', 'ys1752'] 
         #self.nodeDict['ysadmin1']=['ys0355', 'ys0124'] 
-
         #print self.nodeDict 
 
     def readMetricList(self):
-        #print "fetch [metric1,metric2,...]"
+        print "fetch [metric1,metric2,...]"
+        f = open(self.RRDsListFile, 'r')
+        self.metricList=eval(f.readline())
+
+        #self.metricList=[]
         #self.metricList=["cpu_intr", "mem_cached", "disk_free"]
-        #, "ib0_rcv_data", "hpm_snl_rate_usertime", "swap_free", "hpm_wallclock", "load_one", "cpu_speed", "ib0_xmit_data", "part_max_used", "bytes_out", "hpm_dbl_packed_flops", "disk_total", "hpm_dbl_scalar_flops", "proc_run", "pkts_out", "mem_free", "hpm_snl_rate_wallclock", "mem_shared", "cpu_system", "cpu_nice", "hpm_flops", "hpm_dbl_rate_usertime", "boottime", "bytes_in", "hpm_snl_packed", "pkts_in", "load_five", "cpu_aidle", "cpu_user", "hpm_dbl_rate_wallclock", "mem_buffers", "cpu_sintr", "cpu_idle", "cpu_num", "swap_total", "mem_total", "hpm_snl_scalar", "load_fifteen", "cpu_wio", "proc_total"]
-        self.metricList=["cpu_intr", "mem_cached", "disk_free", "ib0_rcv_data", "hpm_snl_rate_usertime", "swap_free", "hpm_wallclock", "load_one", "cpu_speed", "ib0_xmit_data", "part_max_used", "bytes_out", "hpm_dbl_packed_flops", "disk_total", "hpm_dbl_scalar_flops", "proc_run", "pkts_out", "mem_free", "hpm_snl_rate_wallclock", "mem_shared", "cpu_system", "cpu_nice", "hpm_flops", "hpm_dbl_rate_usertime", "boottime", "bytes_in", "hpm_snl_packed", "pkts_in", "load_five", "cpu_aidle", "cpu_user", "hpm_dbl_rate_wallclock", "mem_buffers", "cpu_sintr", "cpu_idle", "cpu_num", "swap_total", "mem_total", "hpm_snl_scalar", "load_fifteen", "cpu_wio", "proc_total"]
-        print self.metricList
+        #print self.metricList
 
     def buildExpectScript(self):
         message="""#!/usr/bin/expect
@@ -151,18 +153,14 @@ def runSysCommand(scommand):
 
 if __name__ == "__main__":
     if(len(sys.argv) < 3):
-        print("usage %s resourceTable(name of machine file containing json format resource table) queryDate(yyyymmdd)" % (sys.argv[0]))
+        print( "USAGE: nohup python %s machine yyyymmdd > screenoutputyyyymmdd.txt & \n The files machine-NodeList-all.txt and machine-RRDsList.txt must exist in the same directory of %s. \n machine is the full name of the machine (yellowstone,laramie), yyymmdd is the query date, and covers the period of yyyy/mm/dd/00:00:00 to yyyy/mm/dd/23:59:00."%(sys.argv[0], sys.argv[0]) )
         sys.exit(1)
 
-    resourceTable=sys.argv[1]
-    queryDate=sys.argv[2]
-
-    print "start processing: "+resourceTable+" "+queryDate+"\n"
-
-    p = extractRrd(resourceTable,queryDate)
+    p = extractRrd(sys.argv[1],sys.argv[2])
     p.readNodeDictionary()
     p.readMetricList()
     p.buildExpectScript()
+    exit()
     for serverName in p.nodeDict.keys():
         for nodeName in p.nodeDict[serverName]:
             p.locateDirectory(queryDate, serverName, nodeName)
