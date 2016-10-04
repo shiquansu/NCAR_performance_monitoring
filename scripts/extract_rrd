@@ -22,11 +22,11 @@ class extractRrd(object):
         self.machine=fname
         self.queryDate=Date
         self.rrdDate=Date[6:]+'.'+Date[4:6]+'.'+Date[0:4]
-        #self.scriptName="expectScript-fetch_rrd_metric"
-        self.scriptName="expectScript-fetch_all_rrd_metrics"
-        #self.homePath="/glade/u/home/shiquan/Desktop/testExpect/"
-        #self.homePath="/glade/p/work/shiquan/testYSWorkSpace/"
-        self.fetchMethod="fetch_all_metrics"
+        #self.scriptName="expectScript-"+fname+"-fetch_all_rrd"
+        self.scriptName="expectScript-"+fname+"-fetch_all_rrd_single_sever"
+        self.homePath="/home/xdmod/NCAR_performance_monitoring/"
+        self.dataPath="/home/xdmod/data/"
+        self.fetchMethod="fetch_all_rrd"
         self.dailyEntryNumber=288
 
     def readNodeDictionary(self):
@@ -37,10 +37,10 @@ class extractRrd(object):
         for tm in md[self.machine]:
             self.nodeDict[tm]=md[self.machine][tm]
 
-        #self.nodeDict={} 
-        #self.nodeDict['ysadmin2']=['ys1705', 'ys1752'] 
-        #self.nodeDict['ysadmin1']=['ys0355', 'ys0124'] 
-        #print self.nodeDict 
+        self.nodeDict={} 
+        self.nodeDict['ysadmin2']=['ys1705', 'ys1752'] 
+        self.nodeDict['ysadmin1']=['ys0355', 'ys0124'] 
+        print self.nodeDict 
 
     def readMetricList(self):
         print "fetch [metric1,metric2,...]"
@@ -64,24 +64,24 @@ expect "'^]'."
 """+'%s'+"""
 expect eof
 """
-        f = open("expect_xport_rrd_metric", 'w')
+        f = open("expectScript-yellowstone-xport_rrd_metric", 'w')
         remoteRRDCommandLine="""send -- "xport -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\' DEF:out=yellowstone/$node_name/$metric.rrd:sum:AVERAGE XPORT:out:\\'$metric\\'\\r" """
         f.write(message%remoteRRDCommandLine)
         f.close()
 
-        f = open("expect_fetch_rrd_metric", 'w')
+        f = open("expectScript-yellowstone-fetch_rrd_metric", 'w')
         remoteRRDCommandLine="""send -- "fetch yellowstone/$node_name/$metric.rrd AVERAGE -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\'\\r" """
         f.write(message%remoteRRDCommandLine)
         f.close()
 
-        f = open("expect_fetch_all_rrd_metrics", 'w')
+        f = open("expectScript-yellowstone-fetch_all_rrd", 'w')
         remoteRRDCommandLine=""
         for metricName in self.metricList:
             remoteRRDCommandLine+="""send -- "fetch yellowstone/$node_name/"""+metricName+""".rrd AVERAGE -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\'\\r" """+"\n"
         f.write(message%remoteRRDCommandLine)
         f.close()
 
-        f = open("expect_fetch_all_rrd_metrics_sync", 'w')
+        f = open("expectScript-yellowstone-fetch_all_rrd_sync", 'w')
         remoteRRDCommandLine=""
         for metricName in self.metricList:
             remoteRRDCommandLine+="""send -- "fetch yellowstone/$node_name/"""+metricName+""".rrd AVERAGE -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\'\\r" """+"\n"
@@ -89,8 +89,32 @@ expect eof
         f.write(message%remoteRRDCommandLine)
         f.close()
 
-    def locateDirectory(self,queryDate,serverName,nodeName):
-        metricPath=self.homePath+queryDate
+        message1="""#!/usr/bin/expect
+set timeout 1
+set machine [lindex $argv 0]
+set port [lindex $argv 1]
+set node_name [lindex $argv 2]
+set metric [lindex $argv 3]
+set query_date [lindex $argv 4]
+spawn telnet ganglia $port
+expect "'^]'."
+"""+'%s'+"""
+expect eof
+"""
+        f = open("expectScript-yellowstone-fetch_all_rrd_single_sever", 'w')
+        remoteRRDCommandLine=""
+        counter=0
+        for metricName in self.metricList:
+            remoteRRDCommandLine+="""send -- "fetch /usr/local/rrds/yellowstone/$node_name/"""+metricName+""".rrd AVERAGE -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\'\\r" """+"\n"
+            if counter%8 == 7:
+                remoteRRDCommandLine+="expect eof"+"\n"
+            counter+=1
+        f.write(message1%remoteRRDCommandLine)
+        f.close()
+
+
+    def locateDirectory(self,serverName,nodeName):
+        metricPath=self.homePath+self.queryDate
         if not os.path.exists(metricPath):
             os.makedirs(metricPath)
         os.chdir(metricPath)
@@ -105,7 +129,17 @@ expect eof
         metricPath=metricPath+"/"+nodeName
         if not os.path.exists(metricPath):
             os.makedirs(metricPath)
-            open(metricPath+"/.notdone.txt", 'w')
+            ff=open(metricPath+"/.notdone.txt", 'w')
+            ff.write('not done')
+            ff.close()
+        os.chdir(metricPath)
+
+    def locateDirectoryPcp(self,nodeName):
+        metricPath=self.dataPath+'pcp-logs/'
+        os.chdir(metricPath)
+        metricPath=metricPath+nodeName+'/'
+        if not os.path.exists(metricPath):
+            os.makedirs(metricPath)
         os.chdir(metricPath)
 
     def extractRrdData(self,serverName,nodeName,metricName):
@@ -119,27 +153,54 @@ expect eof
         f.close() 
 
     def extractAllRrd(self,serverName,nodeName):
-        #print "line118\n"
         rrdcommand="expect "+self.homePath+"/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" all "+self.rrdDate
         rrdData=runSysCommand(rrdcommand)
         for ii in range(len(self.metricList)):
-            #print "ii=",ii,"\n"
             metricName=rrdData[4+ii]
             metricName=metricName.split()[1].split("/")[2]
-            #print metricName,"\n"        
             f = open(metricName, 'w')
             offset=4+len(self.metricList)+ii*(self.dailyEntryNumber+3)
             for itxt in rrdData[offset+2:offset+2+self.dailyEntryNumber]:
                 f.write(itxt)
             f.close() 
 
+    def extractAllRrdToPcp(self,serverName,nodeName):
+        rrdcommand="expect "+self.homePath+"scripts/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" all "+self.rrdDate
+        rrdData=runSysCommand(rrdcommand)
+        print 'rrdcommand=',rrdcommand
+        os.system('pwd')
+        os.system('rm -rf tmpdir')
+        os.makedirs("tmpdir")
+        #os.system("mkdir tmpdir")
+        print 'after print rrdcommand\n'
+        for ii in range(len(self.metricList)):
+            iioffset=(ii/8*8)*(self.dailyEntryNumber+3)+ii
+            metricName=rrdData[4+iioffset]
+            print "metricName with path=",metricName
+            metricName=metricName.split()[1].split("/")[-1]
+            print "metricName=",metricName
+            f = open('./tmpdir/'+metricName, 'w')
+            iioffset=(ii/8+1)*8
+            offset=4+iioffset+ii*(self.dailyEntryNumber+3)
+            for itxt in rrdData[offset+2:offset+2+self.dailyEntryNumber]:
+                f.write(itxt)
+            f.close()
+        pcpPath=self.dataPath+'pcp-logs/'+self.machine+'/'+nodeName
+        print 'pcpPath',pcpPath 
+        os.system('perl '+self.homePath+'/scripts/ganglia2pcp-20160906.pl -s '+self.queryDate+' -e '+self.queryDate+' -f '+self.queryDate+'.00.00 -d '+pcpPath+' -a '+serverName+' -h '+nodeName+' '+pcpPath+'/tmpdir')
+        os.system('rm -rf tmpdir')
+
+
     def houseKeeping(self):
+        os.chdir(self.homePath+'/scripts')
         #folderName=self.machine+'_'+self.queryDate
         #os.system('mkdir '+folderName)
         #os.system('mv rrdMetric-* ./'+folderName)
         #os.system('rm ./'+self.scriptName)
+        os.system('rm ./expect_*')
+        #os.system('rm ./expectScript-*')
 
-        os.system('tar cvf '+self.homePath+self.queryDate+'.tar '+self.homePath+self.queryDate)
+        #os.system('tar cvf '+self.homePath+self.queryDate+'.tar '+self.homePath+self.queryDate)
         print "clean up"
 
 def runSysCommand(scommand):
@@ -160,27 +221,29 @@ if __name__ == "__main__":
     p.readNodeDictionary()
     p.readMetricList()
     p.buildExpectScript()
-    exit()
+    #exit()
     for serverName in p.nodeDict.keys():
         for nodeName in p.nodeDict[serverName]:
-            p.locateDirectory(queryDate, serverName, nodeName)
-            if not os.path.isfile(".notdone.txt"):
-                print ("Already done: %s, %s, %s" % (queryDate, serverName, nodeName))
-                continue
-            if p.fetchMethod == "fetch_single_metric":  
+            #p.locateDirectory(serverName, nodeName)
+            p.locateDirectoryPcp(nodeName)
+            #if not os.path.isfile(".notdone.txt"):
+            #    print ("Already done: %s, %s, %s" % (p.queryDate, serverName, nodeName))
+            #    continue
+            if p.fetchMethod == "fetch_single_rrd":  
                 for metricName in p.metricList:
                     try:
                         print ("try to collect rrd: %s, %s, %s, %s" % (queryDate, serverName, nodeName, metricName))
                         p.extractRrdData(serverName,nodeName,metricName)
                         #pass
                     except:
-                        print ("Cannot collect rrd: %s, %s, %s, %s" % (queryDate, serverName, nodeName, metricName))
-            if p.fetchMethod == "fetch_all_metrics":
+                        print ("Cannot collect single rrd: %s, %s, %s, %s" % (queryDate, serverName, nodeName, metricName))
+            if p.fetchMethod == "fetch_all_rrd":
                 try:
                     #print "fetchMethod=",p.fetchMethod 
-                    p.extractAllRrd(serverName,nodeName)
+                    #p.extractAllRrd(serverName,nodeName)
+                    p.extractAllRrdToPcp(serverName,nodeName)
                 except:
-                    print ("Cannot collect rrd: %s, %s, %s" % (queryDate, serverName, nodeName))
-            os.remove(".notdone.txt")
-    os.chdir(p.homePath)
+                    print ("Cannot collect all rrd: %s, %s, %s" % (p.queryDate, serverName, nodeName))
+            #os.remove(".notdone.txt")
     p.houseKeeping()
+    os.chdir(p.homePath)
