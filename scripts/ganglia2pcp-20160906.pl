@@ -24,6 +24,8 @@ use PCP::LogImport;
 use POSIX qw( floor );
 use File::Basename qw( fileparse );
 
+use Try::Tiny;
+
 use vars qw( %rrd_pcp_mapping );
 
 
@@ -182,7 +184,16 @@ sub read_local_rrdfetch_files {
     my $array_length = @data_array; 
     #print "length of data_array=",$array_length,"\n";
 
-    my @start_line=split /:/, $data_array[0];
+
+    try {
+        my @start_line=split /:/, $data_array[0];
+    } catch {
+        warn "caught error: $_";
+        print "\$data_array[0]",$data_array[0],"\n";
+        print "\$fn=",$fn,"\n";
+    };
+
+    #my @start_line=split /:/, $data_array[0];
     my $r_start=$start_line[0];
     my $r_step=300;
     my $r_names=$r_rrd_file;

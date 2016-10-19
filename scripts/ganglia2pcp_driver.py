@@ -14,21 +14,27 @@ class convertRrdToPCPArchive(object):
     """Example class that extract rrd record into local human readable files"""
     def __init__(self,fname,Date,inDir):
         print "RTfname,queryDate",fname,Date
-        self.nodeListFile="NodeList-"+fname+"all.txt"
-        #self.nodeListFile="NodeList-"+fname+"1.txt"
+
+        self.nodeListFile=fname+"-NodeList-all.txt"
+        #self.nodeListFile=fname+"-NodeList-1.txt"
+        self.RRDsListFile=fname+"-RRDsList.txt"
+
         self.nodeDict={}
         self.metricList=[]
         self.machine=fname
         self.queryDate=Date
+
         self.inputDir=inDir
         self.outputDir="/home/xdmod/data/pcp-logs/yellowstone"
         self.rrdDate=Date[6:]+'.'+Date[4:6]+'.'+Date[0:4]
-        #self.scriptName="expect_fetch_rrd_metric"
-        self.scriptName="expect_fetch_all_rrd_metrics"
-        #self.homePath="/glade/u/home/shiquan/Desktop/testExpect/"
-        self.homePath="/glade/p/work/shiquan/testYSWorkSpace/"
-        self.fetchMethod="fetch_all_metrics"
+
+        #self.scriptName="expectScript-"+fname+"-fetch_all_rrd"
+        self.scriptName="expectScript-"+fname+"-fetch_all_rrd_single_sever"
+        self.homePath="/home/xdmod/NCAR_performance_monitoring/"
+        self.dataPath="/home/xdmod/data/"
+        self.fetchMethod="fetch_all_rrd"
         self.dailyEntryNumber=288
+
 
     def readNodeDictionary(self):
         print "fetch {ysadmin1:[node1, node2,...],ysadmin2:[node1, node2,...]}"
@@ -37,6 +43,9 @@ class convertRrdToPCPArchive(object):
         md=eval(f.readline())
         for tm in md[self.machine]:
             self.nodeDict[tm]=md[self.machine][tm]
+
+        self.nodeDict={}
+        self.nodeDict['ysadmin4']=['ys4143']
 
     def buildPCPArchiveDir(self):
         #build yellowstone/ysXXXX-ib /path/to/pcp-logs/
