@@ -1,0 +1,4 @@
+extractRrd object to be initialized by: RTfname,queryDate yellowstone 20161012
+fetch {ysadmin1:[node1, node2,...],ysadmin2:[node1, node2,...]}
+{'ysadmin2': ['ys1705', 'ys1752'], 'ysadmin1': ['ys0355', 'ys0124']}
+fetch [metric1,metric2,...]

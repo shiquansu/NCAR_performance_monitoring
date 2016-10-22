@@ -1,0 +1,1 @@
+["cpu_intr", "mem_cached", "disk_free", "ib0_rcv_data", "hpm_snl_rate_usertime", "swap_free", "hpm_wallclock", "load_one", "cpu_speed", "ib0_xmit_data", "part_max_used", "bytes_out", "hpm_dbl_packed_flops", "disk_total", "hpm_dbl_scalar_flops", "proc_run", "pkts_out", "mem_free", "hpm_snl_rate_wallclock", "mem_shared", "cpu_system"]
