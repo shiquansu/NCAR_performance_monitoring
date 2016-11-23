@@ -8,6 +8,7 @@ import ast
 import subprocess
 import bisect
 import time
+import datetime
 import glob
 
 class extractRrd(object):
@@ -23,36 +24,46 @@ class extractRrd(object):
         self.queryDate=Date
         self.rrdDate=Date[6:]+'.'+Date[4:6]+'.'+Date[0:4]
         #self.fetchMethod="fetch_all_rrd"
-        self.fetchMethod="xport_multi_rrd_local"
+        self.fetchMethod="xport_multi_rrd_remote"
         self.scriptName="expectScript-"+fname+"-"+self.fetchMethod
-        self.homePath="/home/xdmod/NCAR_performance_monitoring/"
-        self.dataPath="/home/xdmod/data/"
+        #self.homePath="/home/xdmod/NCAR_performance_monitoring/"
+        self.homePath="/glade/p/work/shiquan/NCAR_performance_monitoring/"
+        #self.dataPath="/home/xdmod/data/"
+        self.dataPath="/glade/p/work/shiquan/yellowstoneRRD/"
         #self.outputPcpMethod="remoteServer"
         self.outputPcpMethod="xdmodServer"
         self.dailyEntryNumber=288
+        self.outputDirectory=""
+
+        self.totalWarn=0
+        self.totalFail=0
+        self.nodeFail=0
+        self.totalDone=0
 
     def readNodeDictionary(self):
-        print "fetch {ysadmin1:[node1, node2,...],ysadmin2:[node1, node2,...]}"
+        #print "fetch {ysadmin1:[node1, node2,...],ysadmin2:[node1, node2,...]}"
         f = open(self.nodeListFile, 'r')
         md={}
         md=eval(f.readline())
         for tm in md[self.machine]:
             self.nodeDict[tm]=md[self.machine][tm]
 
-        self.nodeDict={} 
+        #self.nodeDict={} 
         #self.nodeDict['ysadmin2']=['ys1705', 'ys1752'] 
         #self.nodeDict['ysadmin1']=['ys0355', 'ys0124'] 
-        self.nodeDict['ysadmin4']=['ys4143'] 
-        print self.nodeDict 
+        #self.nodeDict['ysadmin4']=['ys4143'] 
+        #self.nodeDict['ysadmin5']=['ys4951', 'ys4846', 'ys5163', 'ys5162', 'ys5164', 'ys5165', 'ys5167'] 
+        #self.nodeDict['ysadmin6']=['ys5815'] 
+        #print self.nodeDict 
 
     def readMetricList(self):
-        print "fetch [metric1,metric2,...]"
+        #print "fetch [metric1,metric2,...]"
         f = open(self.RRDsListFile, 'r')
         self.metricList=eval(f.readline())
 
         #self.metricList=[]
         #self.metricList=["cpu_intr", "mem_cached", "disk_free"]
-        print self.metricList
+        #print self.metricList
 
     def buildExpectScript(self):
         message="""#!/usr/bin/expect
@@ -93,8 +104,8 @@ expect eof
         f.close()
 
 
-        f = open("expectScript-yellowstone-xport_multi_rrd", 'w')
-        remoteRRDCommandLine="""send -- "xport -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\' """
+        f = open("expectScript-yellowstone-xport_multi_rrd_remote", 'w')
+        remoteRRDCommandLine="""send -- "xport -s \\'00:00 $query_date\\' -e \\'23:59 $query_date\\' --json """
         msgDEF=""
         msgOUT=""
         msg1="DEF:out%s=yellowstone/$node_name/%s.rrd:sum:AVERAGE "
@@ -153,8 +164,8 @@ expect eof
         f.close()
 
 
-    def locateDirectory(self,serverName,nodeName):
-        metricPath=self.homePath+self.queryDate
+    def checkOutputDirectory(self,queryDate,serverName,nodeName):
+        metricPath=self.dataPath+queryDate
         if not os.path.exists(metricPath):
             os.makedirs(metricPath)
         os.chdir(metricPath)
@@ -172,7 +183,9 @@ expect eof
             ff=open(metricPath+"/.notdone.txt", 'w')
             ff.write('not done')
             ff.close()
-        os.chdir(metricPath)
+        self.outputDirectory=metricPath
+        os.chdir(self.homePath)
+        #os.chdir(metricPath)
 
     def locateDirectoryPcp(self,nodeName):
         metricPath=self.dataPath+'pcp-logs/'
@@ -184,7 +197,7 @@ expect eof
 
     def extractRrdData(self,serverName,nodeName,metricName):
         rrdcommand="expect "+self.homePath+"/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" "+metricName+" "+self.rrdDate
-        print rrdcommand
+        #print rrdcommand
         rrdData=runSysCommand(rrdcommand)
         f = open(metricName+'.rrd', 'w')
         #print rrdData[7:-1] 
@@ -207,18 +220,18 @@ expect eof
     def extractAllRrdToPcp(self,serverName,nodeName):
         rrdcommand="expect "+self.homePath+"scripts/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" all "+self.rrdDate
         rrdData=runSysCommand(rrdcommand)
-        print 'rrdcommand=',rrdcommand
+        #print 'rrdcommand=',rrdcommand
         os.system('pwd')
         os.system('rm -rf tmpdir')
         os.makedirs("tmpdir")
         #os.system("mkdir tmpdir")
-        print 'after print rrdcommand\n'
+        #print 'after print rrdcommand\n'
         for ii in range(len(self.metricList)):
             iioffset=(ii/8*8)*(self.dailyEntryNumber+3)+ii
             metricName=rrdData[4+iioffset]
-            print "metricName with path=",metricName
+            #print "metricName with path=",metricName
             metricName=metricName.split()[1].split("/")[-1]
-            print "metricName=",metricName
+            #print "metricName=",metricName
             f = open('./tmpdir/'+metricName, 'w')
             iioffset=(ii/8+1)*8
             offset=4+iioffset+ii*(self.dailyEntryNumber+3)
@@ -226,7 +239,7 @@ expect eof
                 f.write(itxt)
             f.close()
         pcpPath=self.dataPath+'pcp-logs/'+self.machine+'/'+nodeName
-        print 'pcpPath',pcpPath 
+        #print 'pcpPath',pcpPath 
         os.system('perl '+self.homePath+'/scripts/ganglia2pcp-20160906.pl -s '+self.queryDate+' -e '+self.queryDate+' -f '+self.queryDate+'.00.00 -d '+pcpPath+' -a '+serverName+' -h '+nodeName+' '+pcpPath+'/tmpdir')
         os.system('rm -rf tmpdir')
 
@@ -234,14 +247,14 @@ expect eof
     def xport_multi_rrd_local(self,serverName,nodeName):
         rrdcommand="expect "+self.homePath+"scripts/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" all "+self.rrdDate
         rrdData=runSysCommand(rrdcommand)
-        print 'rrdcommand=',rrdcommand
+        #print 'rrdcommand=',rrdcommand
         #os.system('pwd')
         #print 'after print rrdcommand\n'
         #print "len(self.metricList), self.metricList=",len(self.metricList), self.metricList,"\n"
-        print "rrdData=",rrdData
+        #print "rrdData=",rrdData
         for ii in range(len(self.metricList)):
             metricName=rrdData[11+ii]
-            print "metricName with path=",metricName
+            #print "metricName with path=",metricName
             istart=rrdData[7].split(": ")[1]
             iioffset=(11+len(self.metricList)+3)
             offset=4+iioffset+ii*(self.dailyEntryNumber+3)
@@ -252,6 +265,72 @@ expect eof
                 f.write(ktxt)
             f.close()
 
+
+    def xport_multi_rrd_remote(self,serverName,nodeName):
+        rrdcommand="expect "+self.homePath+"scripts/"+self.scriptName+" "+serverName+" 13900 "+nodeName+" all "+self.rrdDate
+        rrdData=runSysCommand(rrdcommand)
+        #rrdData=subprocess.Popen(rrdcommand,
+        #         shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
+        #         stderr=subprocess.STDOUT, close_fds=True)
+        #f1 = open(self.homePath+"scripts/xport_rrd.txt", 'w') 
+        #for ii  in range(len(rrdData)):
+        #    f1.write(rrdData[ii])
+        #f1.close()
+        #sanityCheckAndParse
+
+        itime=[]
+        try:
+            istart=rrdData[7].split(": ")[1].split(",")[0].lstrip(' ')
+            istep= rrdData[8].split(": ")[1].split(",")[0].lstrip(' ')
+            #print self.queryDate, istart, istep
+            #print self.queryDate[0:4], self.queryDate[4:6], self.queryDate[6:8]
+            dt = datetime.datetime(int(self.queryDate[0:4]), int(self.queryDate[4:6]), int(self.queryDate[6:8]), 0, 5)
+            cstart=time.mktime(dt.timetuple())
+            #print "cstart,istart,istep=",cstart,int(istart),int(istart)+int(istep),"\n"
+        except:
+            print "can not read time, use calculated values, date, server, node=",self.queryDate,serverName,nodeName,"\n"
+            dt = datetime.datetime(self.queryDate[0:3], self.queryDate[4:5], self.queryDate[6:7], 0, 0)
+            istart=time.mktime(dt.timetuple())
+            istep=300
+
+        for linenum in range(self.dailyEntryNumber):
+            itime.append( int(istart)+linenum*int(istep) )
+        #print "itime=",itime,"\n"
+        ivalue=[]
+        for linenum in range(self.dailyEntryNumber):
+            ivalue.append([])
+            for ii in range(len(self.metricList)):
+               ivalue[linenum].append('Nan')
+        #print "ivalue=",ivalue
+  
+        offset=11+len(self.metricList)+3
+        try:
+            for linenum in range(self.dailyEntryNumber):
+                templine=rrdData[offset+linenum]
+                templine=templine.split("[ ")[1]
+                templine=templine.split(" ]")[0]
+                linelist=templine.split(", ") 
+                for ii in range(len(self.metricList)):
+                    ivalue[linenum][ii]=linelist[ii]
+                    #print "ivalue[linenum][ii]=",ivalue[linenum][ii] 
+                self.totalDone+=1
+        except:
+            print "Error: rrd data fail at: ",self.queryDate,serverName,nodeName
+
+        #print "ivalue=",ivalue
+
+        for ii in range(len(self.metricList)):
+            metricName=rrdData[11+ii]
+            metricName=metricName.split("'")[1]
+            #print "metricName=",metricName
+            #print self.outputDirectory+"/"+metricName+".rrd"
+            f = open(self.outputDirectory+"/"+metricName+".rrd", 'w')
+            #print "out to: ", self.outputDirectory+"/"+metricName+".rrd"
+            for linenum in range(self.dailyEntryNumber):
+                f.write(str(itime[linenum])+": "+str(ivalue[linenum][ii])+"\n")
+            f.close()
+        #os.system("cat "+self.outputDirectory+"/"+metricName+".rrd")
+
     def sanityCheck(self,serverName,nodeName):
         pass
 
@@ -261,12 +340,13 @@ expect eof
         #os.system('mkdir '+folderName)
         #os.system('mv rrdMetric-* ./'+folderName)
         #os.system('rm ./'+self.scriptName)
-        os.system('rm ./expect_*')
+        #os.system('rm ./expect_*')
         #os.system('rm ./expectScript-*')
 
         #os.system('tar cvf '+self.homePath+self.queryDate+'.tar '+self.homePath+self.queryDate)
+        print "totalDone, totalFail, totalWarn=", self.totalDone, self.totalFail, self.totalWarn
         print "clean up"
-
+ 
 def runSysCommand(scommand):
     tmpscreenout=subprocess.Popen(scommand,
                  shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -285,11 +365,12 @@ if __name__ == "__main__":
     p.readNodeDictionary()
     p.readMetricList()
     p.buildExpectScript()
+    methodToCall = getattr(p, p.fetchMethod)
     #exit()
     for serverName in p.nodeDict.keys():
         for nodeName in p.nodeDict[serverName]:
-            #p.locateDirectory(serverName, nodeName)
-            p.locateDirectoryPcp(nodeName)
+            #p.locateDirectoryPcp(nodeName)
+            p.checkOutputDirectory(p.queryDate,serverName,nodeName)
 
             """
             if p.fetchMethod == "fetch_single_rrd":  
@@ -315,13 +396,26 @@ if __name__ == "__main__":
                     print ("Cannot collect all rrd: %s, %s, %s" % (p.queryDate, serverName, nodeName))
             """
             #os.remove(".notdone.txt")
-            try:
-               methodToCall = getattr(p, p.fetchMethod)
-               print methodToCall
-               methodToCall(serverName,nodeName)
-               p.sanityCheck(serverName,nodeName)
-            except:
-               print ("Cannot collect: %s, %s, %s, %s" % (p.queryDate, serverName, nodeName,p.fetchMethod))
+  
+            attempts=0
+            jobdone=0
+            while attempts<3:
+                try:
+                   p.nodeFail=0
+                   methodToCall(serverName,nodeName)
+                   p.sanityCheck(serverName,nodeName)
+                   if (not p.nodeFail==0):
+                       p.totalWarn+=1
+                   attempts = 3
+                   jobdone=1
+                except:
+                   attempts += 1
+                   time.sleep(0.1*attempts*attempts)
+
+            if (not jobdone):
+                print ("Cannot collect: %s, %s, %s, %s" % (p.queryDate, serverName, nodeName,p.fetchMethod))
+                p.totalFail+=1
+
     p.houseKeeping()
     os.chdir(p.homePath)
 

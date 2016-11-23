@@ -1,0 +1,1459 @@
+extractRrd object to be initialized by: RTfname,queryDate yellowstone 20160814
+Error: rrd data fail at:  20160814 ysadmin6 ys5707
+Error: rrd data fail at:  20160814 ysadmin6 ys6221
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5616 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5866
+Error: rrd data fail at:  20160814 ysadmin6 ys5859
+Error: rrd data fail at:  20160814 ysadmin6 ys6020
+Error: rrd data fail at:  20160814 ysadmin6 ys6304
+Error: rrd data fail at:  20160814 ysadmin6 ys5961
+Error: rrd data fail at:  20160814 ysadmin6 ys6264
+Error: rrd data fail at:  20160814 ysadmin6 ys6113
+Error: rrd data fail at:  20160814 ysadmin6 ys6329
+Error: rrd data fail at:  20160814 ysadmin6 ys5723
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5734 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5734
+Error: rrd data fail at:  20160814 ysadmin6 ys6365
+Error: rrd data fail at:  20160814 ysadmin6 ys6269
+Error: rrd data fail at:  20160814 ysadmin6 ys6112
+Error: rrd data fail at:  20160814 ysadmin6 ys6149
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6307 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6307
+Error: rrd data fail at:  20160814 ysadmin6 ys5622
+Error: rrd data fail at:  20160814 ysadmin6 ys5953
+Error: rrd data fail at:  20160814 ysadmin6 ys5932
+Error: rrd data fail at:  20160814 ysadmin6 ys6344
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6146 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5846
+Error: rrd data fail at:  20160814 ysadmin6 ys5604
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5644 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5644
+Error: rrd data fail at:  20160814 ysadmin6 ys6254
+Error: rrd data fail at:  20160814 ysadmin6 ys6124
+Error: rrd data fail at:  20160814 ysadmin6 ys5727
+Error: rrd data fail at:  20160814 ysadmin6 ys6139
+Error: rrd data fail at:  20160814 ysadmin6 ys5815
+Error: rrd data fail at:  20160814 ysadmin6 ys5814
+Error: rrd data fail at:  20160814 ysadmin6 ys5925
+Error: rrd data fail at:  20160814 ysadmin6 ys5663
+Error: rrd data fail at:  20160814 ysadmin6 ys6048
+Error: rrd data fail at:  20160814 ysadmin6 ys6257
+Error: rrd data fail at:  20160814 ysadmin6 ys6033
+Error: rrd data fail at:  20160814 ysadmin6 ys6165
+Error: rrd data fail at:  20160814 ysadmin6 ys6324
+Error: rrd data fail at:  20160814 ysadmin6 ys6367
+Error: rrd data fail at:  20160814 ysadmin6 ys5913
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5670 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5670
+Error: rrd data fail at:  20160814 ysadmin6 ys5860
+Error: rrd data fail at:  20160814 ysadmin6 ys5817
+Error: rrd data fail at:  20160814 ysadmin6 ys5719
+Error: rrd data fail at:  20160814 ysadmin6 ys5936
+Error: rrd data fail at:  20160814 ysadmin6 ys5854
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6259 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6340
+Error: rrd data fail at:  20160814 ysadmin6 ys5716
+Error: rrd data fail at:  20160814 ysadmin6 ys6371
+Error: rrd data fail at:  20160814 ysadmin6 ys6310
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6001 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6022
+Error: rrd data fail at:  20160814 ysadmin6 ys5652
+Error: rrd data fail at:  20160814 ysadmin6 ys5958
+Error: rrd data fail at:  20160814 ysadmin6 ys5965
+Error: rrd data fail at:  20160814 ysadmin6 ys6222
+Error: rrd data fail at:  20160814 ysadmin6 ys5870
+Error: rrd data fail at:  20160814 ysadmin6 ys5755
+Error: rrd data fail at:  20160814 ysadmin6 ys5934
+Error: rrd data fail at:  20160814 ysadmin6 ys6006
+Error: rrd data fail at:  20160814 ysadmin6 ys6332
+Error: rrd data fail at:  20160814 ysadmin6 ys6272
+Error: rrd data fail at:  20160814 ysadmin6 ys6131
+Error: rrd data fail at:  20160814 ysadmin6 ys6225
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6136 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5642
+Error: rrd data fail at:  20160814 ysadmin6 ys5956
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5739 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5712
+Error: rrd data fail at:  20160814 ysadmin6 ys5729
+Error: rrd data fail at:  20160814 ysadmin6 ys6047
+Error: rrd data fail at:  20160814 ysadmin6 ys5613
+Error: rrd data fail at:  20160814 ysadmin6 ys6065
+Error: rrd data fail at:  20160814 ysadmin6 ys5968
+Error: rrd data fail at:  20160814 ysadmin6 ys5608
+Error: rrd data fail at:  20160814 ysadmin6 ys5818
+Error: rrd data fail at:  20160814 ysadmin6 ys5649
+Error: rrd data fail at:  20160814 ysadmin6 ys5731
+Error: rrd data fail at:  20160814 ysadmin6 ys5864
+Error: rrd data fail at:  20160814 ysadmin6 ys6357
+Error: rrd data fail at:  20160814 ysadmin6 ys5640
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5921 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6258 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5621
+Error: rrd data fail at:  20160814 ysadmin6 ys6249
+Error: rrd data fail at:  20160814 ysadmin6 ys6348
+Error: rrd data fail at:  20160814 ysadmin6 ys5941
+Error: rrd data fail at:  20160814 ysadmin6 ys5834
+Error: rrd data fail at:  20160814 ysadmin6 ys5907
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5704 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5704
+Error: rrd data fail at:  20160814 ysadmin6 ys5650
+Error: rrd data fail at:  20160814 ysadmin6 ys6266
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5629 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5902
+Error: rrd data fail at:  20160814 ysadmin6 ys5824
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6208 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5669
+Error: rrd data fail at:  20160814 ysadmin6 ys6004
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5744 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5954
+Error: rrd data fail at:  20160814 ysadmin6 ys5762
+Error: rrd data fail at:  20160814 ysadmin6 ys6157
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6306 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6314
+Error: rrd data fail at:  20160814 ysadmin6 ys5807
+Error: rrd data fail at:  20160814 ysadmin6 ys5972
+Error: rrd data fail at:  20160814 ysadmin6 ys5747
+Error: rrd data fail at:  20160814 ysadmin6 ys5935
+Error: rrd data fail at:  20160814 ysadmin6 ys5951
+Error: rrd data fail at:  20160814 ysadmin6 ys6303
+Error: rrd data fail at:  20160814 ysadmin6 ys6327
+Error: rrd data fail at:  20160814 ysadmin6 ys6128
+Error: rrd data fail at:  20160814 ysadmin6 ys6230
+Error: rrd data fail at:  20160814 ysadmin6 ys6210
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6232 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6046
+Error: rrd data fail at:  20160814 ysadmin6 ys5746
+Error: rrd data fail at:  20160814 ysadmin6 ys6361
+Error: rrd data fail at:  20160814 ysadmin6 ys5905
+Error: rrd data fail at:  20160814 ysadmin6 ys5766
+Error: rrd data fail at:  20160814 ysadmin6 ys5770
+Error: rrd data fail at:  20160814 ysadmin6 ys6349
+Error: rrd data fail at:  20160814 ysadmin6 ys6014
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5671 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6024
+Error: rrd data fail at:  20160814 ysadmin6 ys6345
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys6013 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys5606
+Error: rrd data fail at:  20160814 ysadmin6 ys5709
+Error: rrd data fail at:  20160814 ysadmin6 ys5643
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5901 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6172
+Error: rrd data fail at:  20160814 ysadmin6 ys5624
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5617 
+
+Error: rrd data fail at:  20160814 ysadmin6 ys6137
+can not read time, use calculated values, date, server, node= 20160814 ysadmin6 ys5862 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5201
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4855 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4855
+Error: rrd data fail at:  20160814 ysadmin5 ys4618
+Error: rrd data fail at:  20160814 ysadmin5 ys5330
+Error: rrd data fail at:  20160814 ysadmin5 ys5431
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5147 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4815
+Error: rrd data fail at:  20160814 ysadmin5 ys4722
+Error: rrd data fail at:  20160814 ysadmin5 ys4849
+Error: rrd data fail at:  20160814 ysadmin5 ys5203
+Error: rrd data fail at:  20160814 ysadmin5 ys4748
+Error: rrd data fail at:  20160814 ysadmin5 ys5055
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5537 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5537 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5229
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5067 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5067
+Error: rrd data fail at:  20160814 ysadmin5 ys4510
+Error: rrd data fail at:  20160814 ysadmin5 ys4864
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4770 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5346
+Error: rrd data fail at:  20160814 ysadmin5 ys4628
+Error: rrd data fail at:  20160814 ysadmin5 ys5066
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4743 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5552
+Error: rrd data fail at:  20160814 ysadmin5 ys4868
+Error: rrd data fail at:  20160814 ysadmin5 ys5154
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5225 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5558
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4848 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4848
+Error: rrd data fail at:  20160814 ysadmin5 ys5031
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4724 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4916
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5171 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5163
+Error: rrd data fail at:  20160814 ysadmin5 ys4936
+Error: rrd data fail at:  20160814 ysadmin5 ys5302
+Error: rrd data fail at:  20160814 ysadmin5 ys5105
+Error: rrd data fail at:  20160814 ysadmin5 ys5554
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5006 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5117
+Error: rrd data fail at:  20160814 ysadmin5 ys4563
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5268 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5064
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4648 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4648
+Error: rrd data fail at:  20160814 ysadmin5 ys5043
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5569 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5569 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4969
+Error: rrd data fail at:  20160814 ysadmin5 ys4633
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4759 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4759
+Error: rrd data fail at:  20160814 ysadmin5 ys4854
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4621 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5513
+Error: rrd data fail at:  20160814 ysadmin5 ys5370
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4905 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4918
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5409 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5316
+Error: rrd data fail at:  20160814 ysadmin5 ys4828
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5530 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4723
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4946 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4630
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5254 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5254
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4829 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4932
+Error: rrd data fail at:  20160814 ysadmin5 ys5132
+Error: rrd data fail at:  20160814 ysadmin5 ys5543
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5445 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4953
+Error: rrd data fail at:  20160814 ysadmin5 ys5417
+Error: rrd data fail at:  20160814 ysadmin5 ys5112
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5407 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5407
+Error: rrd data fail at:  20160814 ysadmin5 ys4907
+Error: rrd data fail at:  20160814 ysadmin5 ys5329
+Error: rrd data fail at:  20160814 ysadmin5 ys4562
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4720 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4705
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4740 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4735
+Error: rrd data fail at:  20160814 ysadmin5 ys5053
+Error: rrd data fail at:  20160814 ysadmin5 ys5170
+Error: rrd data fail at:  20160814 ysadmin5 ys5167
+Error: rrd data fail at:  20160814 ysadmin5 ys5421
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5052 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5269
+Error: rrd data fail at:  20160814 ysadmin5 ys4933
+Error: rrd data fail at:  20160814 ysadmin5 ys4664
+Error: rrd data fail at:  20160814 ysadmin5 ys4714
+Error: rrd data fail at:  20160814 ysadmin5 ys5051
+Error: rrd data fail at:  20160814 ysadmin5 ys5345
+Error: rrd data fail at:  20160814 ysadmin5 ys5005
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5412 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5412
+Error: rrd data fail at:  20160814 ysadmin5 ys4702
+Error: rrd data fail at:  20160814 ysadmin5 ys5432
+Error: rrd data fail at:  20160814 ysadmin5 ys5518
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5541 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4906
+Error: rrd data fail at:  20160814 ysadmin5 ys4807
+Error: rrd data fail at:  20160814 ysadmin5 ys5009
+Error: rrd data fail at:  20160814 ysadmin5 ys5459
+Error: rrd data fail at:  20160814 ysadmin5 ys5102
+Error: rrd data fail at:  20160814 ysadmin5 ys5547
+Error: rrd data fail at:  20160814 ysadmin5 ys4757
+Error: rrd data fail at:  20160814 ysadmin5 ys5511
+Error: rrd data fail at:  20160814 ysadmin5 ys5317
+Error: rrd data fail at:  20160814 ysadmin5 ys5438
+Error: rrd data fail at:  20160814 ysadmin5 ys4672
+Error: rrd data fail at:  20160814 ysadmin5 ys4863
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4922 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5152
+Error: rrd data fail at:  20160814 ysadmin5 ys5420
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4852 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4833
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4859 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4626
+Error: rrd data fail at:  20160814 ysadmin5 ys5548
+Error: rrd data fail at:  20160814 ysadmin5 ys4506
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5450 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4737
+Error: rrd data fail at:  20160814 ysadmin5 ys5315
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4818 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5448 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5416
+Error: rrd data fail at:  20160814 ysadmin5 ys4647
+Error: rrd data fail at:  20160814 ysadmin5 ys5138
+Error: rrd data fail at:  20160814 ysadmin5 ys5107
+Error: rrd data fail at:  20160814 ysadmin5 ys4934
+Error: rrd data fail at:  20160814 ysadmin5 ys4571
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4929 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5060 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5119 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4902 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4719
+Error: rrd data fail at:  20160814 ysadmin5 ys5507
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4615 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5219
+Error: rrd data fail at:  20160814 ysadmin5 ys5228
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5360 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5245
+Error: rrd data fail at:  20160814 ysadmin5 ys4761
+Error: rrd data fail at:  20160814 ysadmin5 ys5465
+Error: rrd data fail at:  20160814 ysadmin5 ys5162
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4962 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4731
+Error: rrd data fail at:  20160814 ysadmin5 ys5545
+Error: rrd data fail at:  20160814 ysadmin5 ys5240
+Error: rrd data fail at:  20160814 ysadmin5 ys5158
+Error: rrd data fail at:  20160814 ysadmin5 ys5206
+Error: rrd data fail at:  20160814 ysadmin5 ys5217
+Error: rrd data fail at:  20160814 ysadmin5 ys4622
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4569 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5559 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5333
+Error: rrd data fail at:  20160814 ysadmin5 ys5065
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4814 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5019
+Error: rrd data fail at:  20160814 ysadmin5 ys5337
+Error: rrd data fail at:  20160814 ysadmin5 ys4527
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5572 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5572
+Error: rrd data fail at:  20160814 ysadmin5 ys4938
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5349 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4913
+Error: rrd data fail at:  20160814 ysadmin5 ys4845
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4701 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5550
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4613 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys4732
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys5359 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5359
+can not read time, use calculated values, date, server, node= 20160814 ysadmin5 ys4617 
+
+Error: rrd data fail at:  20160814 ysadmin5 ys5008
+Error: rrd data fail at:  20160814 ysadmin5 ys4830
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3828 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4434
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3702 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4335
+Error: rrd data fail at:  20160814 ysadmin4 ys4334
+Error: rrd data fail at:  20160814 ysadmin4 ys4272
+Error: rrd data fail at:  20160814 ysadmin4 ys4354
+Error: rrd data fail at:  20160814 ysadmin4 ys3742
+Error: rrd data fail at:  20160814 ysadmin4 ys3566
+Error: rrd data fail at:  20160814 ysadmin4 ys4022
+Error: rrd data fail at:  20160814 ysadmin4 ys3865
+Error: rrd data fail at:  20160814 ysadmin4 ys3949
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3909 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3632
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3719 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3570
+Error: rrd data fail at:  20160814 ysadmin4 ys4135
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4343 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4427
+Error: rrd data fail at:  20160814 ysadmin4 ys3817
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4054 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3803
+Error: rrd data fail at:  20160814 ysadmin4 ys3820
+Error: rrd data fail at:  20160814 ysadmin4 ys3450
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4254 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3630
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4161 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3628
+Error: rrd data fail at:  20160814 ysadmin4 ys3854
+Error: rrd data fail at:  20160814 ysadmin4 ys4014
+Error: rrd data fail at:  20160814 ysadmin4 ys4332
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3629 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4004
+Error: rrd data fail at:  20160814 ysadmin4 ys3601
+Error: rrd data fail at:  20160814 ysadmin4 ys3738
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4423 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4423
+Error: rrd data fail at:  20160814 ysadmin4 ys4337
+Error: rrd data fail at:  20160814 ysadmin4 ys3707
+Error: rrd data fail at:  20160814 ysadmin4 ys4002
+Error: rrd data fail at:  20160814 ysadmin4 ys3802
+Error: rrd data fail at:  20160814 ysadmin4 ys4127
+Error: rrd data fail at:  20160814 ysadmin4 ys3662
+Error: rrd data fail at:  20160814 ysadmin4 ys4245
+Error: rrd data fail at:  20160814 ysadmin4 ys3423
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4214 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4214
+Error: rrd data fail at:  20160814 ysadmin4 ys4059
+Error: rrd data fail at:  20160814 ysadmin4 ys4045
+Error: rrd data fail at:  20160814 ysadmin4 ys4338
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4305 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4305
+Error: rrd data fail at:  20160814 ysadmin4 ys3867
+Error: rrd data fail at:  20160814 ysadmin4 ys3914
+Error: rrd data fail at:  20160814 ysadmin4 ys4167
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4101 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3543
+Error: rrd data fail at:  20160814 ysadmin4 ys4142
+Error: rrd data fail at:  20160814 ysadmin4 ys4104
+Error: rrd data fail at:  20160814 ysadmin4 ys3715
+Error: rrd data fail at:  20160814 ysadmin4 ys3504
+Error: rrd data fail at:  20160814 ysadmin4 ys4367
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3919 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3664
+Error: rrd data fail at:  20160814 ysadmin4 ys4452
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3453 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4458
+Error: rrd data fail at:  20160814 ysadmin4 ys3571
+Error: rrd data fail at:  20160814 ysadmin4 ys4359
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4240 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4240
+Error: rrd data fail at:  20160814 ysadmin4 ys3923
+Error: rrd data fail at:  20160814 ysadmin4 ys3565
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4346 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3740
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3614 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4223
+Error: rrd data fail at:  20160814 ysadmin4 ys4255
+Error: rrd data fail at:  20160814 ysadmin4 ys3607
+Error: rrd data fail at:  20160814 ysadmin4 ys4323
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3818 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3818
+Error: rrd data fail at:  20160814 ysadmin4 ys3530
+Error: rrd data fail at:  20160814 ysadmin4 ys4112
+Error: rrd data fail at:  20160814 ysadmin4 ys3835
+Error: rrd data fail at:  20160814 ysadmin4 ys3501
+Error: rrd data fail at:  20160814 ysadmin4 ys4030
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3413 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3832
+Error: rrd data fail at:  20160814 ysadmin4 ys4435
+Error: rrd data fail at:  20160814 ysadmin4 ys4207
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3953 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3402 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4403
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4424 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4026
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4363 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4363
+Error: rrd data fail at:  20160814 ysadmin4 ys4468
+Error: rrd data fail at:  20160814 ysadmin4 ys3701
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3915 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3471
+Error: rrd data fail at:  20160814 ysadmin4 ys3463
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3847 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3847
+Error: rrd data fail at:  20160814 ysadmin4 ys3811
+Error: rrd data fail at:  20160814 ysadmin4 ys3866
+Error: rrd data fail at:  20160814 ysadmin4 ys4326
+Error: rrd data fail at:  20160814 ysadmin4 ys4420
+Error: rrd data fail at:  20160814 ysadmin4 ys4303
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3639 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4437
+Error: rrd data fail at:  20160814 ysadmin4 ys3461
+Error: rrd data fail at:  20160814 ysadmin4 ys3427
+Error: rrd data fail at:  20160814 ysadmin4 ys3747
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3748 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3843
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4312 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3764
+Error: rrd data fail at:  20160814 ysadmin4 ys4368
+Error: rrd data fail at:  20160814 ysadmin4 ys3510
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3645 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3612
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3757 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4222
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3824 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3824
+Error: rrd data fail at:  20160814 ysadmin4 ys4233
+Error: rrd data fail at:  20160814 ysadmin4 ys4310
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3927 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4257
+Error: rrd data fail at:  20160814 ysadmin4 ys4330
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4010 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4010
+Error: rrd data fail at:  20160814 ysadmin4 ys4044
+Error: rrd data fail at:  20160814 ysadmin4 ys4364
+Error: rrd data fail at:  20160814 ysadmin4 ys4107
+Error: rrd data fail at:  20160814 ysadmin4 ys4471
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3668 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3668
+Error: rrd data fail at:  20160814 ysadmin4 ys4001
+Error: rrd data fail at:  20160814 ysadmin4 ys3609
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3411 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3837
+Error: rrd data fail at:  20160814 ysadmin4 ys3410
+Error: rrd data fail at:  20160814 ysadmin4 ys4163
+Error: rrd data fail at:  20160814 ysadmin4 ys4124
+Error: rrd data fail at:  20160814 ysadmin4 ys3549
+Error: rrd data fail at:  20160814 ysadmin4 ys3537
+Error: rrd data fail at:  20160814 ysadmin4 ys3846
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3440 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4407
+Error: rrd data fail at:  20160814 ysadmin4 ys4216
+Error: rrd data fail at:  20160814 ysadmin4 ys3830
+Error: rrd data fail at:  20160814 ysadmin4 ys4070
+Error: rrd data fail at:  20160814 ysadmin4 ys3619
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4208 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3653
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3964 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3415
+Error: rrd data fail at:  20160814 ysadmin4 ys4156
+Error: rrd data fail at:  20160814 ysadmin4 ys4117
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4425 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4425
+Error: rrd data fail at:  20160814 ysadmin4 ys3418
+Error: rrd data fail at:  20160814 ysadmin4 ys3724
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3718 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4035
+Error: rrd data fail at:  20160814 ysadmin4 ys3940
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4041 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4041
+Error: rrd data fail at:  20160814 ysadmin4 ys3503
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4138 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4138
+Error: rrd data fail at:  20160814 ysadmin4 ys4039
+Error: rrd data fail at:  20160814 ysadmin4 ys3716
+Error: rrd data fail at:  20160814 ysadmin4 ys3458
+Error: rrd data fail at:  20160814 ysadmin4 ys4164
+Error: rrd data fail at:  20160814 ysadmin4 ys4447
+Error: rrd data fail at:  20160814 ysadmin4 ys3720
+Error: rrd data fail at:  20160814 ysadmin4 ys4131
+Error: rrd data fail at:  20160814 ysadmin4 ys3958
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3637 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3637 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3771
+Error: rrd data fail at:  20160814 ysadmin4 ys4221
+Error: rrd data fail at:  20160814 ysadmin4 ys4229
+Error: rrd data fail at:  20160814 ysadmin4 ys4061
+Error: rrd data fail at:  20160814 ysadmin4 ys3723
+Error: rrd data fail at:  20160814 ysadmin4 ys4309
+Error: rrd data fail at:  20160814 ysadmin4 ys4441
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3741 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3648
+Error: rrd data fail at:  20160814 ysadmin4 ys3925
+Error: rrd data fail at:  20160814 ysadmin4 ys4056
+Error: rrd data fail at:  20160814 ysadmin4 ys3401
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4366 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3422
+Error: rrd data fail at:  20160814 ysadmin4 ys4058
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys4263 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys4263
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3864 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3858
+Error: rrd data fail at:  20160814 ysadmin4 ys3963
+can not read time, use calculated values, date, server, node= 20160814 ysadmin4 ys3618 
+
+Error: rrd data fail at:  20160814 ysadmin4 ys3618
+Error: rrd data fail at:  20160814 ysadmin3 ys2355
+Error: rrd data fail at:  20160814 ysadmin3 ys3211
+Error: rrd data fail at:  20160814 ysadmin3 ys3226
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2734 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2734
+Error: rrd data fail at:  20160814 ysadmin3 ys2854
+Error: rrd data fail at:  20160814 ysadmin3 ys2654
+Error: rrd data fail at:  20160814 ysadmin3 ys2465
+Error: rrd data fail at:  20160814 ysadmin3 ys2434
+Error: rrd data fail at:  20160814 ysadmin3 ys3370
+Error: rrd data fail at:  20160814 ysadmin3 ys2869
+Error: rrd data fail at:  20160814 ysadmin3 ys3048
+Error: rrd data fail at:  20160814 ysadmin3 ys2415
+Error: rrd data fail at:  20160814 ysadmin3 ys2467
+Error: rrd data fail at:  20160814 ysadmin3 ys3067
+Error: rrd data fail at:  20160814 ysadmin3 ys3341
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2764 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2764
+Error: rrd data fail at:  20160814 ysadmin3 ys3146
+Error: rrd data fail at:  20160814 ysadmin3 ys2969
+Error: rrd data fail at:  20160814 ysadmin3 ys2570
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3214 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3214
+Error: rrd data fail at:  20160814 ysadmin3 ys3168
+Error: rrd data fail at:  20160814 ysadmin3 ys2662
+Error: rrd data fail at:  20160814 ysadmin3 ys2345
+Error: rrd data fail at:  20160814 ysadmin3 ys3042
+Error: rrd data fail at:  20160814 ysadmin3 ys3070
+Error: rrd data fail at:  20160814 ysadmin3 ys2762
+Error: rrd data fail at:  20160814 ysadmin3 ys2842
+Error: rrd data fail at:  20160814 ysadmin3 ys2754
+Error: rrd data fail at:  20160814 ysadmin3 ys2738
+Error: rrd data fail at:  20160814 ysadmin3 ys2760
+Error: rrd data fail at:  20160814 ysadmin3 ys2653
+Error: rrd data fail at:  20160814 ysadmin3 ys2510
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2311 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2867
+Error: rrd data fail at:  20160814 ysadmin3 ys3250
+Error: rrd data fail at:  20160814 ysadmin3 ys2515
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3045 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3045
+Error: rrd data fail at:  20160814 ysadmin3 ys3022
+Error: rrd data fail at:  20160814 ysadmin3 ys3333
+Error: rrd data fail at:  20160814 ysadmin3 ys3031
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2340 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2906
+Error: rrd data fail at:  20160814 ysadmin3 ys2408
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2344 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3029
+Error: rrd data fail at:  20160814 ysadmin3 ys3337
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2843 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3110
+Error: rrd data fail at:  20160814 ysadmin3 ys3101
+Error: rrd data fail at:  20160814 ysadmin3 ys2362
+Error: rrd data fail at:  20160814 ysadmin3 ys3220
+Error: rrd data fail at:  20160814 ysadmin3 ys3202
+Error: rrd data fail at:  20160814 ysadmin3 ys2447
+Error: rrd data fail at:  20160814 ysadmin3 ys3058
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3224 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3238
+Error: rrd data fail at:  20160814 ysadmin3 ys2622
+Error: rrd data fail at:  20160814 ysadmin3 ys2602
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2616 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2463
+Error: rrd data fail at:  20160814 ysadmin3 ys2753
+Error: rrd data fail at:  20160814 ysadmin3 ys2428
+Error: rrd data fail at:  20160814 ysadmin3 ys3023
+Error: rrd data fail at:  20160814 ysadmin3 ys2615
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2819 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3060
+Error: rrd data fail at:  20160814 ysadmin3 ys2647
+Error: rrd data fail at:  20160814 ysadmin3 ys2332
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2560 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2560
+Error: rrd data fail at:  20160814 ysadmin3 ys3301
+Error: rrd data fail at:  20160814 ysadmin3 ys2352
+Error: rrd data fail at:  20160814 ysadmin3 ys2816
+Error: rrd data fail at:  20160814 ysadmin3 ys2657
+Error: rrd data fail at:  20160814 ysadmin3 ys2911
+Error: rrd data fail at:  20160814 ysadmin3 ys2306
+Error: rrd data fail at:  20160814 ysadmin3 ys2946
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3035 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3035
+Error: rrd data fail at:  20160814 ysadmin3 ys2431
+Error: rrd data fail at:  20160814 ysadmin3 ys3307
+Error: rrd data fail at:  20160814 ysadmin3 ys2609
+Error: rrd data fail at:  20160814 ysadmin3 ys3322
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2909 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2912
+Error: rrd data fail at:  20160814 ysadmin3 ys3128
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2307 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2556 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2309
+Error: rrd data fail at:  20160814 ysadmin3 ys2861
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3160 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2670
+Error: rrd data fail at:  20160814 ysadmin3 ys2747
+Error: rrd data fail at:  20160814 ysadmin3 ys2823
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2844 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2404
+Error: rrd data fail at:  20160814 ysadmin3 ys2512
+Error: rrd data fail at:  20160814 ysadmin3 ys3072
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2419 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2668
+Error: rrd data fail at:  20160814 ysadmin3 ys2446
+Error: rrd data fail at:  20160814 ysadmin3 ys2460
+Error: rrd data fail at:  20160814 ysadmin3 ys3330
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3313 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3239
+Error: rrd data fail at:  20160814 ysadmin3 ys2531
+Error: rrd data fail at:  20160814 ysadmin3 ys2908
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2746 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2746
+Error: rrd data fail at:  20160814 ysadmin3 ys2870
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2569 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2952
+Error: rrd data fail at:  20160814 ysadmin3 ys2547
+Error: rrd data fail at:  20160814 ysadmin3 ys3112
+Error: rrd data fail at:  20160814 ysadmin3 ys3165
+Error: rrd data fail at:  20160814 ysadmin3 ys2640
+Error: rrd data fail at:  20160814 ysadmin3 ys2913
+Error: rrd data fail at:  20160814 ysadmin3 ys3323
+Error: rrd data fail at:  20160814 ysadmin3 ys2528
+Error: rrd data fail at:  20160814 ysadmin3 ys3312
+Error: rrd data fail at:  20160814 ysadmin3 ys2859
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2803 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3032
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2638 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2638
+Error: rrd data fail at:  20160814 ysadmin3 ys2750
+Error: rrd data fail at:  20160814 ysadmin3 ys3115
+Error: rrd data fail at:  20160814 ysadmin3 ys3139
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2435 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2435
+Error: rrd data fail at:  20160814 ysadmin3 ys2424
+Error: rrd data fail at:  20160814 ysadmin3 ys2967
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3215 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3215
+Error: rrd data fail at:  20160814 ysadmin3 ys3271
+Error: rrd data fail at:  20160814 ysadmin3 ys2550
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2671 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3336
+Error: rrd data fail at:  20160814 ysadmin3 ys3364
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3159 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2509
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3043 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3043
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2822 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2646
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2801 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3216
+Error: rrd data fail at:  20160814 ysadmin3 ys2853
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3251 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3251
+Error: rrd data fail at:  20160814 ysadmin3 ys2450
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3357 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3351
+Error: rrd data fail at:  20160814 ysadmin3 ys2820
+Error: rrd data fail at:  20160814 ysadmin3 ys2632
+Error: rrd data fail at:  20160814 ysadmin3 ys2836
+Error: rrd data fail at:  20160814 ysadmin3 ys2323
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2815 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2566
+Error: rrd data fail at:  20160814 ysadmin3 ys2966
+Error: rrd data fail at:  20160814 ysadmin3 ys3044
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3231 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3231
+Error: rrd data fail at:  20160814 ysadmin3 ys2732
+Error: rrd data fail at:  20160814 ysadmin3 ys2945
+Error: rrd data fail at:  20160814 ysadmin3 ys2625
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2903 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3358
+Error: rrd data fail at:  20160814 ysadmin3 ys2817
+Error: rrd data fail at:  20160814 ysadmin3 ys2806
+Error: rrd data fail at:  20160814 ysadmin3 ys2555
+Error: rrd data fail at:  20160814 ysadmin3 ys2437
+Error: rrd data fail at:  20160814 ysadmin3 ys2472
+Error: rrd data fail at:  20160814 ysadmin3 ys2339
+Error: rrd data fail at:  20160814 ysadmin3 ys2366
+Error: rrd data fail at:  20160814 ysadmin3 ys3247
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2667 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2667
+Error: rrd data fail at:  20160814 ysadmin3 ys2902
+Error: rrd data fail at:  20160814 ysadmin3 ys2349
+Error: rrd data fail at:  20160814 ysadmin3 ys2744
+Error: rrd data fail at:  20160814 ysadmin3 ys3134
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2972 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2860 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2321
+Error: rrd data fail at:  20160814 ysadmin3 ys2315
+Error: rrd data fail at:  20160814 ysadmin3 ys3212
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2651 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2343
+Error: rrd data fail at:  20160814 ysadmin3 ys2866
+Error: rrd data fail at:  20160814 ysadmin3 ys2557
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2743 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3233
+Error: rrd data fail at:  20160814 ysadmin3 ys2326
+Error: rrd data fail at:  20160814 ysadmin3 ys3258
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2669 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2669
+Error: rrd data fail at:  20160814 ysadmin3 ys2923
+Error: rrd data fail at:  20160814 ysadmin3 ys3123
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2839 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2459
+Error: rrd data fail at:  20160814 ysadmin3 ys2568
+Error: rrd data fail at:  20160814 ysadmin3 ys3240
+Error: rrd data fail at:  20160814 ysadmin3 ys2351
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys3151 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3151
+Error: rrd data fail at:  20160814 ysadmin3 ys3209
+Error: rrd data fail at:  20160814 ysadmin3 ys2464
+Error: rrd data fail at:  20160814 ysadmin3 ys2941
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2928 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3252
+Error: rrd data fail at:  20160814 ysadmin3 ys2742
+Error: rrd data fail at:  20160814 ysadmin3 ys2403
+Error: rrd data fail at:  20160814 ysadmin3 ys2519
+Error: rrd data fail at:  20160814 ysadmin3 ys3304
+Error: rrd data fail at:  20160814 ysadmin3 ys3125
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2871 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys3038
+Error: rrd data fail at:  20160814 ysadmin3 ys2565
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2829 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin3 ys2829 
+
+Error: rrd data fail at:  20160814 ysadmin3 ys2604
+Error: rrd data fail at:  20160814 ysadmin2 ys1247
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1321 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1706
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1304 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1304
+Error: rrd data fail at:  20160814 ysadmin2 ys1968
+Error: rrd data fail at:  20160814 ysadmin2 ys2228
+Error: rrd data fail at:  20160814 ysadmin2 ys2027
+Error: rrd data fail at:  20160814 ysadmin2 ys1724
+Error: rrd data fail at:  20160814 ysadmin2 ys1840
+Error: rrd data fail at:  20160814 ysadmin2 ys1445
+Error: rrd data fail at:  20160814 ysadmin2 ys2032
+Error: rrd data fail at:  20160814 ysadmin2 ys1327
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1248 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1939
+Error: rrd data fail at:  20160814 ysadmin2 ys1210
+Error: rrd data fail at:  20160814 ysadmin2 ys1636
+Error: rrd data fail at:  20160814 ysadmin2 ys1819
+Error: rrd data fail at:  20160814 ysadmin2 ys1916
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2060 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2060 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1412
+Error: rrd data fail at:  20160814 ysadmin2 ys1265
+Error: rrd data fail at:  20160814 ysadmin2 ys2204
+Error: rrd data fail at:  20160814 ysadmin2 ys1860
+Error: rrd data fail at:  20160814 ysadmin2 ys1657
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1208 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1931
+Error: rrd data fail at:  20160814 ysadmin2 ys1428
+Error: rrd data fail at:  20160814 ysadmin2 ys2260
+Error: rrd data fail at:  20160814 ysadmin2 ys2145
+Error: rrd data fail at:  20160814 ysadmin2 ys1426
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1507 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1507
+Error: rrd data fail at:  20160814 ysadmin2 ys2256
+Error: rrd data fail at:  20160814 ysadmin2 ys1717
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1641 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2159
+Error: rrd data fail at:  20160814 ysadmin2 ys2104
+Error: rrd data fail at:  20160814 ysadmin2 ys1471
+Error: rrd data fail at:  20160814 ysadmin2 ys1536
+Error: rrd data fail at:  20160814 ysadmin2 ys1323
+Error: rrd data fail at:  20160814 ysadmin2 ys1325
+Error: rrd data fail at:  20160814 ysadmin2 ys2043
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1618 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1729
+Error: rrd data fail at:  20160814 ysadmin2 ys1347
+Error: rrd data fail at:  20160814 ysadmin2 ys2007
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2250 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2250
+Error: rrd data fail at:  20160814 ysadmin2 ys1815
+Error: rrd data fail at:  20160814 ysadmin2 ys1514
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1369 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1766
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1808 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1763
+Error: rrd data fail at:  20160814 ysadmin2 ys2155
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2064 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2148
+Error: rrd data fail at:  20160814 ysadmin2 ys2233
+Error: rrd data fail at:  20160814 ysadmin2 ys2261
+Error: rrd data fail at:  20160814 ysadmin2 ys1564
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1754 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1754
+Error: rrd data fail at:  20160814 ysadmin2 ys1852
+Error: rrd data fail at:  20160814 ysadmin2 ys1217
+Error: rrd data fail at:  20160814 ysadmin2 ys1822
+Error: rrd data fail at:  20160814 ysadmin2 ys1642
+Error: rrd data fail at:  20160814 ysadmin2 ys2214
+Error: rrd data fail at:  20160814 ysadmin2 ys1567
+Error: rrd data fail at:  20160814 ysadmin2 ys1950
+Error: rrd data fail at:  20160814 ysadmin2 ys1231
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1444 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1444
+Error: rrd data fail at:  20160814 ysadmin2 ys1506
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2002 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1470
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1441 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1441
+Error: rrd data fail at:  20160814 ysadmin2 ys2267
+Error: rrd data fail at:  20160814 ysadmin2 ys1437
+Error: rrd data fail at:  20160814 ysadmin2 ys1254
+Error: rrd data fail at:  20160814 ysadmin2 ys2046
+Error: rrd data fail at:  20160814 ysadmin2 ys1814
+Error: rrd data fail at:  20160814 ysadmin2 ys1719
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1824 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1824
+Error: rrd data fail at:  20160814 ysadmin2 ys1612
+Error: rrd data fail at:  20160814 ysadmin2 ys1527
+Error: rrd data fail at:  20160814 ysadmin2 ys2143
+Error: rrd data fail at:  20160814 ysadmin2 ys2023
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1771 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1771
+Error: rrd data fail at:  20160814 ysadmin2 ys1322
+Error: rrd data fail at:  20160814 ysadmin2 ys1963
+Error: rrd data fail at:  20160814 ysadmin2 ys2017
+Error: rrd data fail at:  20160814 ysadmin2 ys1570
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2013 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2013
+Error: rrd data fail at:  20160814 ysadmin2 ys1548
+Error: rrd data fail at:  20160814 ysadmin2 ys2034
+Error: rrd data fail at:  20160814 ysadmin2 ys1545
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1302 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1302
+Error: rrd data fail at:  20160814 ysadmin2 ys2113
+Error: rrd data fail at:  20160814 ysadmin2 ys1604
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1613 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1613
+Error: rrd data fail at:  20160814 ysadmin2 ys2245
+Error: rrd data fail at:  20160814 ysadmin2 ys1812
+Error: rrd data fail at:  20160814 ysadmin2 ys2117
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1201 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1443
+Error: rrd data fail at:  20160814 ysadmin2 ys1764
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1568 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1568
+Error: rrd data fail at:  20160814 ysadmin2 ys2110
+Error: rrd data fail at:  20160814 ysadmin2 ys1847
+Error: rrd data fail at:  20160814 ysadmin2 ys1934
+Error: rrd data fail at:  20160814 ysadmin2 ys1555
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1225 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1225 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1707
+Error: rrd data fail at:  20160814 ysadmin2 ys1358
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2164 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2164
+Error: rrd data fail at:  20160814 ysadmin2 ys1562
+Error: rrd data fail at:  20160814 ysadmin2 ys1672
+Error: rrd data fail at:  20160814 ysadmin2 ys1945
+Error: rrd data fail at:  20160814 ysadmin2 ys1264
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1737 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1737
+Error: rrd data fail at:  20160814 ysadmin2 ys1351
+Error: rrd data fail at:  20160814 ysadmin2 ys2246
+Error: rrd data fail at:  20160814 ysadmin2 ys2237
+Error: rrd data fail at:  20160814 ysadmin2 ys1457
+Error: rrd data fail at:  20160814 ysadmin2 ys1251
+Error: rrd data fail at:  20160814 ysadmin2 ys2019
+Error: rrd data fail at:  20160814 ysadmin2 ys2101
+Error: rrd data fail at:  20160814 ysadmin2 ys1966
+Error: rrd data fail at:  20160814 ysadmin2 ys2138
+Error: rrd data fail at:  20160814 ysadmin2 ys1510
+Error: rrd data fail at:  20160814 ysadmin2 ys1535
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1553 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1553
+Error: rrd data fail at:  20160814 ysadmin2 ys1836
+Error: rrd data fail at:  20160814 ysadmin2 ys2263
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2105 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1316
+Error: rrd data fail at:  20160814 ysadmin2 ys1446
+Error: rrd data fail at:  20160814 ysadmin2 ys1436
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1826 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1608
+Error: rrd data fail at:  20160814 ysadmin2 ys2170
+Error: rrd data fail at:  20160814 ysadmin2 ys2257
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1417 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1417
+Error: rrd data fail at:  20160814 ysadmin2 ys2205
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1663 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2243
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2107 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1462 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1462
+Error: rrd data fail at:  20160814 ysadmin2 ys1318
+Error: rrd data fail at:  20160814 ysadmin2 ys2252
+Error: rrd data fail at:  20160814 ysadmin2 ys1653
+Error: rrd data fail at:  20160814 ysadmin2 ys1401
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2009 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2009
+Error: rrd data fail at:  20160814 ysadmin2 ys1206
+Error: rrd data fail at:  20160814 ysadmin2 ys1844
+Error: rrd data fail at:  20160814 ysadmin2 ys1250
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1867 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1867
+Error: rrd data fail at:  20160814 ysadmin2 ys2040
+Error: rrd data fail at:  20160814 ysadmin2 ys1917
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1601 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2012
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1964 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1970
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1747 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1518
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1541 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1270
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1751 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1827
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2212 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1770
+Error: rrd data fail at:  20160814 ysadmin2 ys1259
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1872 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2171
+Error: rrd data fail at:  20160814 ysadmin2 ys1651
+Error: rrd data fail at:  20160814 ysadmin2 ys2249
+Error: rrd data fail at:  20160814 ysadmin2 ys1624
+Error: rrd data fail at:  20160814 ysadmin2 ys2142
+Error: rrd data fail at:  20160814 ysadmin2 ys2010
+Error: rrd data fail at:  20160814 ysadmin2 ys1228
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1633 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2134
+Error: rrd data fail at:  20160814 ysadmin2 ys2220
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1222 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1222
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1517 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2111
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1315 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2270
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1721 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1708
+Error: rrd data fail at:  20160814 ysadmin2 ys1648
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1768 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1364
+Error: rrd data fail at:  20160814 ysadmin2 ys1339
+Error: rrd data fail at:  20160814 ysadmin2 ys2058
+Error: rrd data fail at:  20160814 ysadmin2 ys1750
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys2022 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2022
+Error: rrd data fail at:  20160814 ysadmin2 ys1906
+Error: rrd data fail at:  20160814 ysadmin2 ys1669
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1640 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys2244
+Error: rrd data fail at:  20160814 ysadmin2 ys1414
+can not read time, use calculated values, date, server, node= 20160814 ysadmin2 ys1319 
+
+Error: rrd data fail at:  20160814 ysadmin2 ys1319
+Error: rrd data fail at:  20160814 ysadmin1 ys0355
+Error: rrd data fail at:  20160814 ysadmin1 ys0236
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0114 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0466
+Error: rrd data fail at:  20160814 ysadmin1 ys0367
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0261 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0463
+Error: rrd data fail at:  20160814 ysadmin1 ys0618
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0962 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0403
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0562 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1004
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0170 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0631
+Error: rrd data fail at:  20160814 ysadmin1 ys1111
+Error: rrd data fail at:  20160814 ysadmin1 ys1138
+Error: rrd data fail at:  20160814 ysadmin1 ys0436
+Error: rrd data fail at:  20160814 ysadmin1 ys0549
+Error: rrd data fail at:  20160814 ysadmin1 ys1167
+Error: rrd data fail at:  20160814 ysadmin1 ys0848
+Error: rrd data fail at:  20160814 ysadmin1 ys0913
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1139 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0405
+Error: rrd data fail at:  20160814 ysadmin1 ys0441
+Error: rrd data fail at:  20160814 ysadmin1 ys1029
+Error: rrd data fail at:  20160814 ysadmin1 ys0448
+Error: rrd data fail at:  20160814 ysadmin1 ys0959
+Error: rrd data fail at:  20160814 ysadmin1 ys0515
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0145 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0145 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0458
+Error: rrd data fail at:  20160814 ysadmin1 ys0309
+Error: rrd data fail at:  20160814 ysadmin1 ys0929
+Error: rrd data fail at:  20160814 ysadmin1 ys0762
+Error: rrd data fail at:  20160814 ysadmin1 ys1054
+Error: rrd data fail at:  20160814 ysadmin1 ys0212
+Error: rrd data fail at:  20160814 ysadmin1 ys0630
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0428 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0428
+Error: rrd data fail at:  20160814 ysadmin1 ys0356
+Error: rrd data fail at:  20160814 ysadmin1 ys0352
+Error: rrd data fail at:  20160814 ysadmin1 ys0121
+Error: rrd data fail at:  20160814 ysadmin1 ys0808
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0629 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0721
+Error: rrd data fail at:  20160814 ysadmin1 ys0325
+Error: rrd data fail at:  20160814 ysadmin1 ys0763
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0611 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0611 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0915
+Error: rrd data fail at:  20160814 ysadmin1 ys0247
+Error: rrd data fail at:  20160814 ysadmin1 ys1067
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0926 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1131
+Error: rrd data fail at:  20160814 ysadmin1 ys0250
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1005 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1005
+Error: rrd data fail at:  20160814 ysadmin1 ys1070
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1064 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1037
+Error: rrd data fail at:  20160814 ysadmin1 ys0472
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1172 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0871
+Error: rrd data fail at:  20160814 ysadmin1 ys0102
+Error: rrd data fail at:  20160814 ysadmin1 ys1144
+Error: rrd data fail at:  20160814 ysadmin1 ys0858
+Error: rrd data fail at:  20160814 ysadmin1 ys0461
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0252 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0252
+Error: rrd data fail at:  20160814 ysadmin1 ys0746
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0344 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0158
+Error: rrd data fail at:  20160814 ysadmin1 ys0647
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0603 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1135
+Error: rrd data fail at:  20160814 ysadmin1 ys0733
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0156 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0156
+Error: rrd data fail at:  20160814 ysadmin1 ys1157
+Error: rrd data fail at:  20160814 ysadmin1 ys0644
+Error: rrd data fail at:  20160814 ysadmin1 ys0512
+Error: rrd data fail at:  20160814 ysadmin1 ys0138
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0828 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0336
+Error: rrd data fail at:  20160814 ysadmin1 ys0805
+Error: rrd data fail at:  20160814 ysadmin1 ys0118
+Error: rrd data fail at:  20160814 ysadmin1 ys0337
+Error: rrd data fail at:  20160814 ysadmin1 ys0821
+Error: rrd data fail at:  20160814 ysadmin1 ys0907
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1158 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0334
+Error: rrd data fail at:  20160814 ysadmin1 ys1066
+Error: rrd data fail at:  20160814 ysadmin1 ys0933
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0620 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0620
+Error: rrd data fail at:  20160814 ysadmin1 ys0509
+Error: rrd data fail at:  20160814 ysadmin1 ys1136
+Error: rrd data fail at:  20160814 ysadmin1 ys0234
+Error: rrd data fail at:  20160814 ysadmin1 ys0817
+Error: rrd data fail at:  20160814 ysadmin1 ys0818
+Error: rrd data fail at:  20160814 ysadmin1 ys0171
+Error: rrd data fail at:  20160814 ysadmin1 ys0966
+Error: rrd data fail at:  20160814 ysadmin1 ys0904
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0161 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0161
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1123 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1115
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1105 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0940
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0133 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0541
+Error: rrd data fail at:  20160814 ysadmin1 ys0520
+Error: rrd data fail at:  20160814 ysadmin1 ys0149
+Error: rrd data fail at:  20160814 ysadmin1 ys0168
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0272 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0454
+Error: rrd data fail at:  20160814 ysadmin1 ys0210
+Error: rrd data fail at:  20160814 ysadmin1 ys0867
+Error: rrd data fail at:  20160814 ysadmin1 ys0564
+Error: rrd data fail at:  20160814 ysadmin1 ys0269
+Error: rrd data fail at:  20160814 ysadmin1 ys0360
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0470 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0470
+Error: rrd data fail at:  20160814 ysadmin1 ys0807
+Error: rrd data fail at:  20160814 ysadmin1 ys0735
+Error: rrd data fail at:  20160814 ysadmin1 ys0332
+Error: rrd data fail at:  20160814 ysadmin1 ys0127
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1149 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0638
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0312 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0728
+Error: rrd data fail at:  20160814 ysadmin1 ys0326
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0209 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0443 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0443
+Error: rrd data fail at:  20160814 ysadmin1 ys0547
+Error: rrd data fail at:  20160814 ysadmin1 ys0809
+Error: rrd data fail at:  20160814 ysadmin1 ys1020
+Error: rrd data fail at:  20160814 ysadmin1 ys0140
+Error: rrd data fail at:  20160814 ysadmin1 ys0961
+Error: rrd data fail at:  20160814 ysadmin1 ys1031
+Error: rrd data fail at:  20160814 ysadmin1 ys0211
+Error: rrd data fail at:  20160814 ysadmin1 ys0464
+Error: rrd data fail at:  20160814 ysadmin1 ys1156
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0632 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0632
+Error: rrd data fail at:  20160814 ysadmin1 ys1062
+Error: rrd data fail at:  20160814 ysadmin1 ys0401
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0242 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0242
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0567 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0363
+Error: rrd data fail at:  20160814 ysadmin1 ys0654
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0668 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0668
+Error: rrd data fail at:  20160814 ysadmin1 ys0134
+Error: rrd data fail at:  20160814 ysadmin1 ys0943
+Error: rrd data fail at:  20160814 ysadmin1 ys1056
+Error: rrd data fail at:  20160814 ysadmin1 ys0111
+Error: rrd data fail at:  20160814 ysadmin1 ys0965
+Error: rrd data fail at:  20160814 ysadmin1 ys0863
+Error: rrd data fail at:  20160814 ysadmin1 ys1039
+Error: rrd data fail at:  20160814 ysadmin1 ys0811
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0742 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0232
+Error: rrd data fail at:  20160814 ysadmin1 ys0614
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0244 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0316
+Error: rrd data fail at:  20160814 ysadmin1 ys1043
+Error: rrd data fail at:  20160814 ysadmin1 ys0348
+Error: rrd data fail at:  20160814 ysadmin1 ys0246
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys1116 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0215
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0365 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0365
+Error: rrd data fail at:  20160814 ysadmin1 ys1148
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0949 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1170
+Error: rrd data fail at:  20160814 ysadmin1 ys0751
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0414 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys1124
+Error: rrd data fail at:  20160814 ysadmin1 ys0521
+Error: rrd data fail at:  20160814 ysadmin1 ys0803
+Error: rrd data fail at:  20160814 ysadmin1 ys0220
+Error: rrd data fail at:  20160814 ysadmin1 ys1122
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0723 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0723
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0208 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0738
+Error: rrd data fail at:  20160814 ysadmin1 ys0345
+Error: rrd data fail at:  20160814 ysadmin1 ys0856
+Error: rrd data fail at:  20160814 ysadmin1 ys0548
+Error: rrd data fail at:  20160814 ysadmin1 ys0725
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0672 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0672
+Error: rrd data fail at:  20160814 ysadmin1 ys0711
+Error: rrd data fail at:  20160814 ysadmin1 ys0425
+Error: rrd data fail at:  20160814 ysadmin1 ys1022
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0819 
+
+can not read time, use calculated values, date, server, node= 20160814 ysadmin1 ys0819 
+
+Error: rrd data fail at:  20160814 ysadmin1 ys0909
+totalDone, totalFail, totalWarn= 1053488 0 0
+clean up

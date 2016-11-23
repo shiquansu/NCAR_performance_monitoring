@@ -18,14 +18,15 @@ class composeNodeList(object):
         self.serverList=[]
         self.nodeList={}
         self.nodeList[self.machineName]={}
-        self.nodeListFileName='NodeList-'+mname+'.txt'
+        self.nodeListFileName=mname+'-NodeList-all.txt'
+
         f = open(self.nodeListFileName, 'w')
         f.close()
         self.scriptName='expect_node_list'
 
     def setServerList(self):
-        self.serverList=['ysadmin1','ysadmin2'] 
-        #self.serverList=['ysadmin1','ysadmin2','ysadmin3','ysadmin4','ysadmin5','ysadmin6'] 
+        #self.serverList=['ysadmin1','ysadmin2'] 
+        self.serverList=['ysadmin1','ysadmin2','ysadmin3','ysadmin4','ysadmin5','ysadmin6'] 
         print self.serverList
 
     def buildExpectScript(self):
@@ -49,7 +50,7 @@ expect eof
         sout=runSysCommand(scommand)
         self.nodeList[self.machineName][sname]=[] 
         for itxt in sout:
-            if len(itxt)==10 and ("d ys" in itxt):
+            if len(itxt)==10 and ("d ys" in itxt) and ("d ysmgt" not in itxt):
                 self.nodeList[self.machineName][sname].append("ys"+itxt[4:8])
             else:
                 pass
