@@ -1,28 +1,94 @@
-Use of uninitialized value $line_content[1] in substitution (s///) at ganglia2pcp-20160906.pl line 637.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value $start in concatenation (.) or string at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value $start in print at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value $start in concatenation (.) or string at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value $start in print at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value $start in concatenation (.) or string at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value $start in print at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value $start in concatenation (.) or string at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value $start in print at ganglia2pcp-20160906.pl line 611.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 189.
-Use of uninitialized value in split at ganglia2pcp-20160906.pl line 196.
-Use of uninitialized value $inval in int at ganglia2pcp-20160906.pl line 140.
-__pmLogNewFile: "/home/xdmod/data/pcp-logs/yellowstone/ys4143-ib/20160728.00.00.index" already exists, not over-written
-pmiWrite failed :File exists
+nohup: ignoring input and appending output to `nohup.out'
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion
+pmiPutValue failed NULL indom : Impossible value or scale conversion

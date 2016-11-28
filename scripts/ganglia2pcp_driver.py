@@ -16,7 +16,6 @@ class convertRrdToPCPArchive(object):
         print "RTfname,queryDate",fname,Date
 
         self.nodeListFile=fname+"-NodeList-all.txt"
-        #self.nodeListFile=fname+"-NodeList-1.txt"
         self.RRDsListFile=fname+"-RRDsList.txt"
 
         self.nodeDict={}
@@ -28,12 +27,12 @@ class convertRrdToPCPArchive(object):
         self.outputDir="/home/xdmod/data/pcp-logs/yellowstone"
         self.rrdDate=Date[6:]+'.'+Date[4:6]+'.'+Date[0:4]
 
-        #self.scriptName="expectScript-"+fname+"-fetch_all_rrd"
-        self.scriptName="expectScript-"+fname+"-fetch_all_rrd_single_sever"
+        self.fetchMethod="xport_multi_rrd_remote"
+        self.scriptName="expectScript-"+fname+"-"+self.fetchMethod
         self.homePath="/home/xdmod/NCAR_performance_monitoring/"
         self.dataPath="/home/xdmod/data/"
-        self.fetchMethod="fetch_all_rrd"
         self.dailyEntryNumber=288
+        self.outputDirectory=""
 
 
     def readNodeDictionary(self):
@@ -44,8 +43,8 @@ class convertRrdToPCPArchive(object):
         for tm in md[self.machine]:
             self.nodeDict[tm]=md[self.machine][tm]
 
-        self.nodeDict={}
-        self.nodeDict['ysadmin4']=['ys4143']
+        #self.nodeDict={}
+        #self.nodeDict['ysadmin4']=['ys4143']
 
     def buildPCPArchiveDir(self):
         #build yellowstone/ysXXXX-ib /path/to/pcp-logs/
@@ -79,7 +78,7 @@ def runSysCommand(scommand):
 
 if __name__ == "__main__":
     if(len(sys.argv) < 3):
-        print("usage %s resourceTable(name of machine file containing json format resource table) queryDate(yyyymmdd) inputDir(/path/to/rrd_fetched) " % (sys.argv[0]))
+        print("usage %s machinename (there are files in the same folder, named with machine name, containing json format resource table) queryDate(yyyymmdd) inputDir(/path/to/rrd_fetched) " % (sys.argv[0]))
         sys.exit(1)
 
     print "start processing resourceTable, queryDate, inputDir: "+sys.argv[1]+" "+sys.argv[2]+" "+sys.argv[3]+"\n"

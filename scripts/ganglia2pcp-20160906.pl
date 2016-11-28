@@ -118,17 +118,17 @@ sub convert_cpu {
 sub convert_mem_total {
 	my ($base_metric, $inval, $nowtime) = @_;
 
-	#convert from KB to MB
+	#convert from B to MB
 
-	return floor($inval/1000.0);
+	return floor($inval/1000.0/1000.0);
 }
 
 sub convert_mem {
         my ($base_metric, $inval, $nowtime) = @_;
 
-	# No conversion, ganglia just reports fractions of KB
+	#convert from B to KB, ganglia reports in unit of B
 
-        return floor($inval);
+        return floor($inval/1000.0);
 }
 
 sub convert_int {
@@ -167,8 +167,8 @@ sub convert_boottime {
 
 sub read_local_rrdfetch_files {
     my ($r_rrd_dir, $r_rrd_file, $r_starttimearg, $r_endtimearg, $r_consolidation) = @_;
-    
     #print "r_rrd_dir, r_rrd_file, r_starttimearg, r_endtimearg, r_consolidation",$r_rrd_dir, $r_rrd_file, $r_starttimearg, $r_endtimearg, $r_consolidation;
+
     #locate data file
     my $fn=$r_rrd_dir."/".$r_rrd_file;
     die "$fn not exists!\n" if ! -e $fn;
@@ -182,18 +182,20 @@ sub read_local_rrdfetch_files {
     close($fh);
 
     my $array_length = @data_array; 
-    #print "length of data_array=",$array_length,"\n";
+    #print "\n length of data_array=",$array_length,"\n";
+    #print "first line in data_array to split with : =",$data_array[0],"\n";
 
-
+    my @start_line;
     try {
-        my @start_line=split /:/, $data_array[0];
+        @start_line=split /:/, $data_array[0];
+        #print "startline =",@start_line,"\n";
+        #print "startline[0] =",$start_line[0],"\n";
     } catch {
         warn "caught error: $_";
         print "\$data_array[0]",$data_array[0],"\n";
         print "\$fn=",$fn,"\n";
     };
 
-    #my @start_line=split /:/, $data_array[0];
     my $r_start=$start_line[0];
     my $r_step=300;
     my $r_names=$r_rrd_file;
@@ -771,7 +773,7 @@ foreach my $timestep ( sort {$a<=>$b} keys %rrd_stats ){
 		if( $rrd_pcp_mapping{$metric}{"indom"} == PM_INDOM_NULL){
 			# No indom
                         # 4011 records show "pmiPutValue failed NULL indom" in 20160727
-                        print "metric_value=",$metric_value," rrd_pcp_mapping{metric}{name}=",$rrd_pcp_mapping{$metric}{"name"}," metric=", $metric, "\n";
+                        #print "metric_value=",$metric_value," rrd_pcp_mapping{metric}{name}=",$rrd_pcp_mapping{$metric}{"name"}," metric=", $metric, "\n";
 			my $sts = pmiPutValue($rrd_pcp_mapping{$metric}{"name"}, "", $metric_value);
 			if( $sts < 0 ){
 				die "pmiPutValue failed NULL indom : " . pmiErrStr($sts) . "\n";
