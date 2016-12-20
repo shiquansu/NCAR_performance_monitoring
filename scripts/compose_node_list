@@ -26,11 +26,12 @@ class composeNodeList(object):
 
     def setServerList(self):
         #self.serverList=['ysadmin1','ysadmin2'] 
-        self.serverList=['ysadmin1','ysadmin2','ysadmin3','ysadmin4','ysadmin5','ysadmin6'] 
+        #self.serverList=['ysadmin1','ysadmin2','ysadmin3','ysadmin4','ysadmin5','ysadmin6'] 
+        self.serverList=['Rack 1','Rack 2','Rack 3','ysadmin4','ysadmin5','ysadmin6'] 
         print self.serverList
 
     def buildExpectScript(self):
-        f = open(self.scriptName, 'w')
+        f = open('expect_ysadmin', 'w')
         message="""#!/usr/bin/expect
 set timeout 1
 set ip [lindex $argv 0]
@@ -43,6 +44,20 @@ expect eof
 """
         f.write(message)
         f.close()        
+
+        f = open('expect_ysadmin', 'w')
+        message="""#!/usr/bin/expect
+set timeout 1
+set ip [lindex $argv 0]
+spawn telnet $ip 13900
+expect "'^]'."
+send -- "cd yellowstone\\r"
+expect "$"
+send -- "ls\\r"
+expect eof
+"""
+        f.write(message)
+        f.close()
 
     def findYSNode(self,sname):
         scommand="expect "+self.scriptName+" "+sname+" 13900"
@@ -79,7 +94,8 @@ if __name__ == "__main__":
     p.buildExpectScript()
     for serverName in p.serverList:
         try:
-            p.findYSNode(serverName)
+            #p.findYSNode(serverName)
+            p.findCHNode(serverName)
         except:
             print ("Can not find node list at server: %s" % (serverName))
     p.writeout()

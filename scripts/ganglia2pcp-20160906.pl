@@ -135,8 +135,6 @@ sub convert_int {
         my ($base_metric, $inval, $nowtime) = @_;
 
         #convert from float to int
-        #print "int(inval)=",int($inval);
-        #print "inval=",$inval;
         return int($inval);
 }
  
@@ -144,7 +142,6 @@ sub convert_float {
         my ($base_metric, $inval, $nowtime) = @_;
 
         #convert  to float
-        #print "inval*1.0=",$inval*1.0,"\n";
         return $inval*1.0;
 }
 
@@ -152,8 +149,6 @@ sub convert_swap {
 	my ($base_metric, $inval, $nowtime) = @_;
 
         #convert from KB to B
-        #print "floor(inval*1000)",floor($inval*1000);
-        #print "inval",$inval;
         return floor($inval*1000);
 }
 
@@ -610,13 +605,13 @@ while(my $rrd_file = readdir(RRD_DIR)){
             my ($start,$step,$names,$data) = RRDs::fetch("$rrd_dir/$rrd_file", $starttimearg, $endtimearg, "AVERAGE");
         }elsif ($input_method eq "read_local" ) {
             my ($start,$step,$names,$data) = read_local_rrdfetch_files($rrd_dir, $rrd_file, $starttimearg, $endtimearg, "AVERAGE");
-            print "$start,$step,$names,$data",$start,$step,$names,$data;
+            #print "$start,$step,$names,$data",$start,$step,$names,$data;
         }else{
             print "Unsupport input method, please redefine input_method string to rrdfetch_local or read_local \n";
             exit 1;
         }
         my ($start,$step,$names,$data) = read_local_rrdfetch_files($rrd_dir, $rrd_file, $starttimearg, $endtimearg, "AVERAGE");
-        print $input_method,"\n";
+        #print $input_method,"\n";
 
 		# Debug
 		#print "Start:       ", scalar localtime($start), " ($start)\n";
