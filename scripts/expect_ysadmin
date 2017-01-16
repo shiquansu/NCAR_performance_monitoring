@@ -1,0 +1,9 @@
+#!/usr/bin/expect
+set timeout 1
+set ip [lindex $argv 0]
+spawn telnet $ip 13900
+expect "'^]'."
+send -- "cd yellowstone\r"
+expect "$"
+send -- "ls\r"
+expect eof

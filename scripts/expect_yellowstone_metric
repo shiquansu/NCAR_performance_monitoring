@@ -1,0 +1,8 @@
+#!/usr/bin/expect
+set timeout 1
+spawn telnet ganglia 13900
+expect "'^]'."
+send -- "cd  yellowstone/ys0101\r"
+expect "$"
+send -- "ls\r"
+expect eof

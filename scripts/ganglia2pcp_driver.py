@@ -47,7 +47,7 @@ class convertRrdToPCPArchive(object):
         #self.nodeDict['ysadmin4']=['ys4143']
 
     def buildPCPArchiveDir(self):
-        #build yellowstone/ysXXXX-ib /path/to/pcp-logs/
+        #build yellowstone/ysXXXX-ib in /path/to/pcp-logs/
         if os.path.exists(self.outputDir):
             sys.exit("Before continue, please backup: "+self.outputDir) 
         if os.path.exists(self.outputDir+"-empty"):
