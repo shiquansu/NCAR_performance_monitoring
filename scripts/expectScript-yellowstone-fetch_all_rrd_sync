@@ -7,10 +7,6 @@ set metric [lindex $argv 3]
 set query_date [lindex $argv 4]
 spawn telnet $ip $port
 expect "'^]'."
-send -- "fetch yellowstone/$node_name/GOps.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
-expect eof
-send -- "fetch yellowstone/$node_name/MFLOPs.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
-expect eof
 send -- "fetch yellowstone/$node_name/boottime.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 send -- "fetch yellowstone/$node_name/bytes_in.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
@@ -21,9 +17,13 @@ send -- "fetch yellowstone/$node_name/cpu_aidle.rrd AVERAGE -s \'00:00 $query_da
 expect eof
 send -- "fetch yellowstone/$node_name/cpu_idle.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
+send -- "fetch yellowstone/$node_name/cpu_intr.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
 send -- "fetch yellowstone/$node_name/cpu_nice.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 send -- "fetch yellowstone/$node_name/cpu_num.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/cpu_sintr.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 send -- "fetch yellowstone/$node_name/cpu_speed.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
@@ -37,7 +37,29 @@ send -- "fetch yellowstone/$node_name/disk_free.rrd AVERAGE -s \'00:00 $query_da
 expect eof
 send -- "fetch yellowstone/$node_name/disk_total.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
-send -- "fetch yellowstone/$node_name/entropy_avail.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+send -- "fetch yellowstone/$node_name/hpm_dbl_packed_flops.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_dbl_rate_usertime.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_dbl_rate_wallclock.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_dbl_scalar_flops.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_flops.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_snl_packed.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_snl_rate_usertime.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_snl_rate_wallclock.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_snl_scalar.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/hpm_wallclock.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/ib0_rcv_data.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/ib0_xmit_data.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 send -- "fetch yellowstone/$node_name/load_fifteen.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
@@ -62,6 +84,12 @@ expect eof
 send -- "fetch yellowstone/$node_name/pkts_out.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 send -- "fetch yellowstone/$node_name/proc_run.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/proc_total.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/swap_free.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
+expect eof
+send -- "fetch yellowstone/$node_name/swap_total.rrd AVERAGE -s \'00:00 $query_date\' -e \'23:59 $query_date\'\r" 
 expect eof
 
 expect eof

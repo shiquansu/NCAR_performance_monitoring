@@ -345,7 +345,8 @@ expect eof
                 f.write(str(itime[linenum])+": "+str(ivalue[linenum][ii])+"\n")
             f.close()
         #print "serverName, nodeName=", serverName,nodeName
-        gcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170112.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+" -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"')
+        #gcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170112.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+" -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for cheyenne
+        gcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170112.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+"-ib -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for yellowstone
         #print gcommand,"\n"
         tmpout=os.system(gcommand)
 

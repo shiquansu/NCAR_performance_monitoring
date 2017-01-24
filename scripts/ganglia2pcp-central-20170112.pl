@@ -555,7 +555,6 @@ my $inhost = $host;
 my $outhost = $host."-ib";
 
 if ($host){
-    #print "Setting hostname: $host , input hostname: $inhost , output hostname: $outhost .\n";
     pmiSetHostname($outhost) == 0
     or die "pmiSetHostname($outhost): ". pmiErrStr(-1) . "\n";
 }
@@ -603,17 +602,16 @@ while(my $rrd_file = readdir(RRD_DIR)){
 		# Grab the highest resolution data
 		# As returned by RRDs::fetch, step is already : step * pdp_per_row
 
-        if ( $input_method eq "rrdfetch_local" ){
-            my ($start,$step,$names,$data) = RRDs::fetch("$rrd_dir/$rrd_file", $starttimearg, $endtimearg, "AVERAGE");
-        }elsif ($input_method eq "read_local" ) {
-            my ($start,$step,$names,$data) = read_local_rrdfetch_files($rrd_dir, $rrd_file, $starttimearg, $endtimearg, "AVERAGE");
-            #print "$start,$step,$names,$data",$start,$step,$names,$data;
-        }else{
-            print "Unsupport input method, please redefine input_method string to rrdfetch_local or read_local \n";
-            exit 1;
-        }
+        #if ( $input_method eq "rrdfetch_local" ){
+        #    my ($start,$step,$names,$data) = RRDs::fetch("$rrd_dir/$rrd_file", $starttimearg, $endtimearg, "AVERAGE");
+        #}elsif ($input_method eq "read_local" ) {
+        #    my ($start,$step,$names,$data) = read_local_rrdfetch_files($rrd_dir, $rrd_file, $starttimearg, $endtimearg, "AVERAGE");
+        #    print "$start,$step,$names,$data",$start,$step,$names,$data;
+        #}else{
+        #    print "Unsupport input method, please redefine input_method string to rrdfetch_local or read_local \n";
+        #    exit 1;
+        #}
         my ($start,$step,$names,$data) = read_local_rrdfetch_files($rrd_dir, $rrd_file, $starttimearg, $endtimearg, "AVERAGE");
-        #print $input_method,"\n";
 
 		# Debug
 		#print "Start:       ", scalar localtime($start), " ($start)\n";
@@ -803,7 +801,7 @@ foreach my $timestep ( sort {$a<=>$b} keys %rrd_stats ){
 			}
 			
 		}
-	}	
+	}
 	pmiWrite($timestep, 0) >= 0 or die "pmiWrite failed :" . pmiErrStr(-1) . "\n";
 }
 
