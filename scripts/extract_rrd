@@ -33,7 +33,14 @@ class extractRrd(object):
         self.dataPath="/home/xdmod/data/tmp_data/"+self.machine+"RRD/" # the base of rrd middle step storage
         #self.outputPcpMethod="remoteServer"
         self.outputPcpMethod="xdmodServer"
-        self.dailyEntryNumber=72  # choose from 288, 72
+        # choose from 288, 72
+        if self.machine=="yellowstone": 
+            self.dailyEntryNumber=288
+        elif self.machine=="cheyenne": 
+            self.dailyEntryNumber=72
+        else:
+            print "can not set dailyEntryNumber from machine name.\n" 
+            exit()
         self.outputRrdDir="" # for storing rrd in the middle step
 
         self.outputPcpDir="/home/xdmod/data/pcp-logs/"+self.machine #for pcp output
@@ -304,11 +311,12 @@ expect eof
             istep= rrdData[11].split(": ")[1].split(",")[0].lstrip(' ')
             dt = datetime.datetime(int(self.queryDate[0:4]), int(self.queryDate[4:6]), int(self.queryDate[6:8]), 0, 5)
             cstart=time.mktime(dt.timetuple())
+            #self.dailyEntryNumber=24*60/istep  # reset the dailyEntryNumber, currently assume data uniformly distribute with istep interval in 24 hours. 
         except:
             #print "can not read time, use calculated values, date, server, node=",self.queryDate,serverName,nodeName,"\n"
             dt = datetime.datetime(self.queryDate[0:3], self.queryDate[4:5], self.queryDate[6:7], 0, 0)
             istart=time.mktime(dt.timetuple())
-            istep=1200
+            istep=24*60/self.dailyEntryNumber
         for linenum in range(self.dailyEntryNumber):
             itime.append( int(istart)+linenum*int(istep) )
 
@@ -329,7 +337,7 @@ expect eof
                 for ii in range(len(self.metricList)):
                     ivalue[linenum][ii]=linelist[ii]
                     #print "ivalue[linenum][ii]=",ivalue[linenum][ii]
-                self.totalDone+=1
+            self.totalDone+=1
         except:
              pass #print "Error: rrd data fail at: ",self.queryDate,serverName,nodeName
 
@@ -345,10 +353,10 @@ expect eof
                 f.write(str(itime[linenum])+": "+str(ivalue[linenum][ii])+"\n")
             f.close()
         #print "serverName, nodeName=", serverName,nodeName
-        cheyenne-gcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170112.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+" -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for cheyenne
-        yellowstone-gcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170112.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+"-ib -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for yellowstone
-        gcommand=self.machine+"-gcommand" 
-        #print gcommand,"\n"
+        cheyennegcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170201.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+" -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for cheyenne
+        yellowstonegcommand="perl "+self.homePath+"/scripts/ganglia2pcp-central-20170201.pl -s "+self.queryDate+" -e "+self.queryDate+" -f "+self.queryDate+".00.00 -d "+self.outputPcpDir+"/"+nodeName+"-ib -a "+encloseCharacter(serverName,' ','"')+" -h "+nodeName+" "+encloseCharacter(self.outputRrdDir,' ','"') #for yellowstone
+        gcommand=eval(self.machine+"gcommand") 
+        #print gcommand," is the command.\n"
         tmpout=os.system(gcommand)
 
     def xport_multi_rrd_remote(self,serverName,nodeName):
